@@ -1,0 +1,301 @@
+id,disease,property,question,answer
+1,Phenylketonuria,hasInheritancePattern,What is the inheritance pattern of Phenylketonuria?,Autosomal Recessive
+2,Phenylketonuria,treatedWith,How is Phenylketonuria treated?,Low-Phenylalanine Diet
+3,Phenylketonuria,hasDeficientEnzyme,Which enzyme is deficient in Phenylketonuria?,Phenylalanine Hydroxylase
+4,Phenylketonuria,hasSymptom,What symptoms are associated with Phenylketonuria?,Intellectual Disability; Microcephaly
+5,Phenylketonuria,accumulatesMetabolite,Which metabolite accumulates in Phenylketonuria?,Phenylalanine
+6,Phenylketonuria,hasCausativeGene,Which gene causes Phenylketonuria?,PAH
+7,Maple Syrup Urine Disease,hasInheritancePattern,What is the inheritance pattern of Maple Syrup Urine Disease?,Autosomal Recessive
+8,Maple Syrup Urine Disease,treatedWith,How is Maple Syrup Urine Disease treated?,Branched-Chain Amino Acid Restricted Diet
+9,Maple Syrup Urine Disease,hasDeficientEnzyme,Which enzyme is deficient in Maple Syrup Urine Disease?,Branched-Chain Alpha-Ketoacid Dehydrogenase
+10,Maple Syrup Urine Disease,hasSymptom,What symptoms are associated with Maple Syrup Urine Disease?,Encephalopathy; Sweet-Smelling Urine
+11,Maple Syrup Urine Disease,accumulatesMetabolite,Which metabolite accumulates in Maple Syrup Urine Disease?,Leucine
+12,Maple Syrup Urine Disease,hasCausativeGene,Which gene causes Maple Syrup Urine Disease?,BCKDHA
+13,Homocystinuria,hasInheritancePattern,What is the inheritance pattern of Homocystinuria?,Autosomal Recessive
+14,Homocystinuria,treatedWith,How is Homocystinuria treated?,Vitamin B6 Supplementation
+15,Homocystinuria,hasDeficientEnzyme,Which enzyme is deficient in Homocystinuria?,Cystathionine Beta-Synthase
+16,Homocystinuria,hasSymptom,What symptoms are associated with Homocystinuria?,Lens Dislocation; Marfanoid Habitus; Thromboembolism
+17,Homocystinuria,accumulatesMetabolite,Which metabolite accumulates in Homocystinuria?,Homocysteine
+18,Homocystinuria,hasCausativeGene,Which gene causes Homocystinuria?,CBS
+19,Tyrosinemia Type I,hasInheritancePattern,What is the inheritance pattern of Tyrosinemia Type I?,Autosomal Recessive
+20,Tyrosinemia Type I,treatedWith,How is Tyrosinemia Type I treated?,Nitisinone Therapy
+21,Tyrosinemia Type I,hasDeficientEnzyme,Which enzyme is deficient in Tyrosinemia Type I?,Fumarylacetoacetase
+22,Tyrosinemia Type I,hasSymptom,What symptoms are associated with Tyrosinemia Type I?,Liver Failure; Renal Tubular Dysfunction
+23,Tyrosinemia Type I,accumulatesMetabolite,Which metabolite accumulates in Tyrosinemia Type I?,Succinylacetone
+24,Tyrosinemia Type I,hasCausativeGene,Which gene causes Tyrosinemia Type I?,FAH
+25,Alkaptonuria,hasInheritancePattern,What is the inheritance pattern of Alkaptonuria?,Autosomal Recessive
+26,Alkaptonuria,treatedWith,How is Alkaptonuria treated?,Nitisinone Therapy
+27,Alkaptonuria,hasDeficientEnzyme,Which enzyme is deficient in Alkaptonuria?,"Homogentisate 1,2-Dioxygenase"
+28,Alkaptonuria,hasSymptom,What symptoms are associated with Alkaptonuria?,Arthritis; Ochronosis
+29,Alkaptonuria,accumulatesMetabolite,Which metabolite accumulates in Alkaptonuria?,Homogentisic Acid
+30,Alkaptonuria,hasCausativeGene,Which gene causes Alkaptonuria?,HGD
+31,Nonketotic Hyperglycinemia,hasInheritancePattern,What is the inheritance pattern of Nonketotic Hyperglycinemia?,Autosomal Recessive
+32,Nonketotic Hyperglycinemia,treatedWith,How is Nonketotic Hyperglycinemia treated?,Sodium Benzoate Therapy
+33,Nonketotic Hyperglycinemia,hasDeficientEnzyme,Which enzyme is deficient in Nonketotic Hyperglycinemia?,Glycine Decarboxylase
+34,Nonketotic Hyperglycinemia,hasSymptom,What symptoms are associated with Nonketotic Hyperglycinemia?,Encephalopathy; Seizures
+35,Nonketotic Hyperglycinemia,accumulatesMetabolite,Which metabolite accumulates in Nonketotic Hyperglycinemia?,Glycine
+36,Nonketotic Hyperglycinemia,hasCausativeGene,Which gene causes Nonketotic Hyperglycinemia?,GLDC
+37,Citrullinemia Type I,hasInheritancePattern,What is the inheritance pattern of Citrullinemia Type I?,Autosomal Recessive
+38,Citrullinemia Type I,treatedWith,How is Citrullinemia Type I treated?,Protein-Restricted Diet
+39,Citrullinemia Type I,hasDeficientEnzyme,Which enzyme is deficient in Citrullinemia Type I?,Argininosuccinate Synthase
+40,Citrullinemia Type I,hasSymptom,What symptoms are associated with Citrullinemia Type I?,Hyperammonemia; Lethargy
+41,Citrullinemia Type I,accumulatesMetabolite,Which metabolite accumulates in Citrullinemia Type I?,Citrulline
+42,Citrullinemia Type I,hasCausativeGene,Which gene causes Citrullinemia Type I?,ASS1
+43,Argininosuccinic Aciduria,hasInheritancePattern,What is the inheritance pattern of Argininosuccinic Aciduria?,Autosomal Recessive
+44,Argininosuccinic Aciduria,treatedWith,How is Argininosuccinic Aciduria treated?,Arginine Supplementation
+45,Argininosuccinic Aciduria,hasDeficientEnzyme,Which enzyme is deficient in Argininosuccinic Aciduria?,Argininosuccinate Lyase
+46,Argininosuccinic Aciduria,hasSymptom,What symptoms are associated with Argininosuccinic Aciduria?,Hyperammonemia; Trichorrhexis Nodosa
+47,Argininosuccinic Aciduria,accumulatesMetabolite,Which metabolite accumulates in Argininosuccinic Aciduria?,Argininosuccinic Acid
+48,Argininosuccinic Aciduria,hasCausativeGene,Which gene causes Argininosuccinic Aciduria?,ASL
+49,Arginase Deficiency,hasInheritancePattern,What is the inheritance pattern of Arginase Deficiency?,Autosomal Recessive
+50,Arginase Deficiency,treatedWith,How is Arginase Deficiency treated?,Protein-Restricted Diet
+51,Arginase Deficiency,hasDeficientEnzyme,Which enzyme is deficient in Arginase Deficiency?,Arginase 1
+52,Arginase Deficiency,hasSymptom,What symptoms are associated with Arginase Deficiency?,Progressive Intellectual Disability; Spasticity
+53,Arginase Deficiency,accumulatesMetabolite,Which metabolite accumulates in Arginase Deficiency?,Arginine
+54,Arginase Deficiency,hasCausativeGene,Which gene causes Arginase Deficiency?,ARG1
+55,Hartnup Disease,hasInheritancePattern,What is the inheritance pattern of Hartnup Disease?,Autosomal Recessive
+56,Hartnup Disease,treatedWith,How is Hartnup Disease treated?,Nicotinamide Supplementation
+57,Hartnup Disease,hasDeficientEnzyme,Which enzyme is deficient in Hartnup Disease?,Neutral Amino Acid Transporter B(0)AT1
+58,Hartnup Disease,hasSymptom,What symptoms are associated with Hartnup Disease?,Cerebellar Ataxia; Pellagra-Like Rash
+59,Hartnup Disease,accumulatesMetabolite,Which metabolite accumulates in Hartnup Disease?,Tryptophan
+60,Hartnup Disease,hasCausativeGene,Which gene causes Hartnup Disease?,SLC6A19
+61,Propionic Acidemia,hasInheritancePattern,What is the inheritance pattern of Propionic Acidemia?,Autosomal Recessive
+62,Propionic Acidemia,treatedWith,How is Propionic Acidemia treated?,Protein-Restricted Diet with Biotin
+63,Propionic Acidemia,hasDeficientEnzyme,Which enzyme is deficient in Propionic Acidemia?,Propionyl-CoA Carboxylase
+64,Propionic Acidemia,hasSymptom,What symptoms are associated with Propionic Acidemia?,Hyperammonemia; Lethargy
+65,Propionic Acidemia,accumulatesMetabolite,Which metabolite accumulates in Propionic Acidemia?,Propionic Acid
+66,Propionic Acidemia,hasCausativeGene,Which gene causes Propionic Acidemia?,PCCA
+67,Methylmalonic Acidemia,hasInheritancePattern,What is the inheritance pattern of Methylmalonic Acidemia?,Autosomal Recessive
+68,Methylmalonic Acidemia,treatedWith,How is Methylmalonic Acidemia treated?,Vitamin B12 Supplementation
+69,Methylmalonic Acidemia,hasDeficientEnzyme,Which enzyme is deficient in Methylmalonic Acidemia?,Methylmalonyl-CoA Mutase
+70,Methylmalonic Acidemia,hasSymptom,What symptoms are associated with Methylmalonic Acidemia?,Failure to Thrive; Metabolic Acidosis
+71,Methylmalonic Acidemia,accumulatesMetabolite,Which metabolite accumulates in Methylmalonic Acidemia?,Methylmalonic Acid
+72,Methylmalonic Acidemia,hasCausativeGene,Which gene causes Methylmalonic Acidemia?,MUT
+73,Isovaleric Acidemia,hasInheritancePattern,What is the inheritance pattern of Isovaleric Acidemia?,Autosomal Recessive
+74,Isovaleric Acidemia,treatedWith,How is Isovaleric Acidemia treated?,Leucine-Restricted Diet with Glycine
+75,Isovaleric Acidemia,hasDeficientEnzyme,Which enzyme is deficient in Isovaleric Acidemia?,Isovaleryl-CoA Dehydrogenase
+76,Isovaleric Acidemia,hasSymptom,What symptoms are associated with Isovaleric Acidemia?,Sweaty Feet Odor; Vomiting
+77,Isovaleric Acidemia,accumulatesMetabolite,Which metabolite accumulates in Isovaleric Acidemia?,Isovaleric Acid
+78,Isovaleric Acidemia,hasCausativeGene,Which gene causes Isovaleric Acidemia?,IVD
+79,Glutaric Acidemia Type I,hasInheritancePattern,What is the inheritance pattern of Glutaric Acidemia Type I?,Autosomal Recessive
+80,Glutaric Acidemia Type I,treatedWith,How is Glutaric Acidemia Type I treated?,Carnitine Supplementation with Lysine Restriction
+81,Glutaric Acidemia Type I,hasDeficientEnzyme,Which enzyme is deficient in Glutaric Acidemia Type I?,Glutaryl-CoA Dehydrogenase
+82,Glutaric Acidemia Type I,hasSymptom,What symptoms are associated with Glutaric Acidemia Type I?,Dystonic Movement Disorder; Macrocephaly
+83,Glutaric Acidemia Type I,accumulatesMetabolite,Which metabolite accumulates in Glutaric Acidemia Type I?,Glutaric Acid
+84,Glutaric Acidemia Type I,hasCausativeGene,Which gene causes Glutaric Acidemia Type I?,GCDH
+85,3-Methylcrotonyl-CoA Carboxylase Deficiency,hasInheritancePattern,What is the inheritance pattern of 3-Methylcrotonyl-CoA Carboxylase Deficiency?,Autosomal Recessive
+86,3-Methylcrotonyl-CoA Carboxylase Deficiency,treatedWith,How is 3-Methylcrotonyl-CoA Carboxylase Deficiency treated?,Carnitine Supplementation
+87,3-Methylcrotonyl-CoA Carboxylase Deficiency,hasDeficientEnzyme,Which enzyme is deficient in 3-Methylcrotonyl-CoA Carboxylase Deficiency?,3-Methylcrotonyl-CoA Carboxylase
+88,3-Methylcrotonyl-CoA Carboxylase Deficiency,hasSymptom,What symptoms are associated with 3-Methylcrotonyl-CoA Carboxylase Deficiency?,Mild Hypotonia
+89,3-Methylcrotonyl-CoA Carboxylase Deficiency,accumulatesMetabolite,Which metabolite accumulates in 3-Methylcrotonyl-CoA Carboxylase Deficiency?,3-Methylcrotonylglycine
+90,3-Methylcrotonyl-CoA Carboxylase Deficiency,hasCausativeGene,Which gene causes 3-Methylcrotonyl-CoA Carboxylase Deficiency?,MCCC1
+91,Beta-Ketothiolase Deficiency,hasInheritancePattern,What is the inheritance pattern of Beta-Ketothiolase Deficiency?,Autosomal Recessive
+92,Beta-Ketothiolase Deficiency,treatedWith,How is Beta-Ketothiolase Deficiency treated?,Protein-Restricted Diet
+93,Beta-Ketothiolase Deficiency,hasDeficientEnzyme,Which enzyme is deficient in Beta-Ketothiolase Deficiency?,Beta-Ketothiolase
+94,Beta-Ketothiolase Deficiency,hasSymptom,What symptoms are associated with Beta-Ketothiolase Deficiency?,Episodic Ketoacidosis
+95,Beta-Ketothiolase Deficiency,accumulatesMetabolite,Which metabolite accumulates in Beta-Ketothiolase Deficiency?,2-Methyl-3-Hydroxybutyric Acid
+96,Beta-Ketothiolase Deficiency,hasCausativeGene,Which gene causes Beta-Ketothiolase Deficiency?,ACAT1
+97,Malonic Aciduria,hasInheritancePattern,What is the inheritance pattern of Malonic Aciduria?,Autosomal Recessive
+98,Malonic Aciduria,treatedWith,How is Malonic Aciduria treated?,Low-Fat Diet
+99,Malonic Aciduria,hasDeficientEnzyme,Which enzyme is deficient in Malonic Aciduria?,Malonyl-CoA Decarboxylase
+100,Malonic Aciduria,hasSymptom,What symptoms are associated with Malonic Aciduria?,Cardiomyopathy; Developmental Delay
+101,Malonic Aciduria,accumulatesMetabolite,Which metabolite accumulates in Malonic Aciduria?,Malonic Acid
+102,Malonic Aciduria,hasCausativeGene,Which gene causes Malonic Aciduria?,MLYCD
+103,Ornithine Transcarbamylase Deficiency,hasInheritancePattern,What is the inheritance pattern of Ornithine Transcarbamylase Deficiency?,X-Linked
+104,Ornithine Transcarbamylase Deficiency,treatedWith,How is Ornithine Transcarbamylase Deficiency treated?,Protein-Restricted Diet
+105,Ornithine Transcarbamylase Deficiency,hasDeficientEnzyme,Which enzyme is deficient in Ornithine Transcarbamylase Deficiency?,Ornithine Transcarbamylase
+106,Ornithine Transcarbamylase Deficiency,hasSymptom,What symptoms are associated with Ornithine Transcarbamylase Deficiency?,Hyperammonemia; Vomiting
+107,Ornithine Transcarbamylase Deficiency,accumulatesMetabolite,Which metabolite accumulates in Ornithine Transcarbamylase Deficiency?,Orotic Acid
+108,Ornithine Transcarbamylase Deficiency,hasCausativeGene,Which gene causes Ornithine Transcarbamylase Deficiency?,OTC
+109,Carbamoyl Phosphate Synthetase I Deficiency,hasInheritancePattern,What is the inheritance pattern of Carbamoyl Phosphate Synthetase I Deficiency?,Autosomal Recessive
+110,Carbamoyl Phosphate Synthetase I Deficiency,treatedWith,How is Carbamoyl Phosphate Synthetase I Deficiency treated?,Protein-Restricted Diet
+111,Carbamoyl Phosphate Synthetase I Deficiency,hasDeficientEnzyme,Which enzyme is deficient in Carbamoyl Phosphate Synthetase I Deficiency?,Carbamoyl Phosphate Synthetase I
+112,Carbamoyl Phosphate Synthetase I Deficiency,hasSymptom,What symptoms are associated with Carbamoyl Phosphate Synthetase I Deficiency?,Coma; Hyperammonemia
+113,Carbamoyl Phosphate Synthetase I Deficiency,accumulatesMetabolite,Which metabolite accumulates in Carbamoyl Phosphate Synthetase I Deficiency?,Ammonia
+114,Carbamoyl Phosphate Synthetase I Deficiency,hasCausativeGene,Which gene causes Carbamoyl Phosphate Synthetase I Deficiency?,CPS1
+115,N-Acetylglutamate Synthase Deficiency,hasInheritancePattern,What is the inheritance pattern of N-Acetylglutamate Synthase Deficiency?,Autosomal Recessive
+116,N-Acetylglutamate Synthase Deficiency,treatedWith,How is N-Acetylglutamate Synthase Deficiency treated?,Carglumic Acid Therapy
+117,N-Acetylglutamate Synthase Deficiency,hasDeficientEnzyme,Which enzyme is deficient in N-Acetylglutamate Synthase Deficiency?,N-Acetylglutamate Synthase
+118,N-Acetylglutamate Synthase Deficiency,hasSymptom,What symptoms are associated with N-Acetylglutamate Synthase Deficiency?,Hyperammonemia
+119,N-Acetylglutamate Synthase Deficiency,accumulatesMetabolite,Which metabolite accumulates in N-Acetylglutamate Synthase Deficiency?,Ammonia
+120,N-Acetylglutamate Synthase Deficiency,hasCausativeGene,Which gene causes N-Acetylglutamate Synthase Deficiency?,NAGS
+121,Medium-Chain Acyl-CoA Dehydrogenase Deficiency,hasInheritancePattern,What is the inheritance pattern of Medium-Chain Acyl-CoA Dehydrogenase Deficiency?,Autosomal Recessive
+122,Medium-Chain Acyl-CoA Dehydrogenase Deficiency,treatedWith,How is Medium-Chain Acyl-CoA Dehydrogenase Deficiency treated?,Avoidance of Fasting
+123,Medium-Chain Acyl-CoA Dehydrogenase Deficiency,hasDeficientEnzyme,Which enzyme is deficient in Medium-Chain Acyl-CoA Dehydrogenase Deficiency?,Medium-Chain Acyl-CoA Dehydrogenase
+124,Medium-Chain Acyl-CoA Dehydrogenase Deficiency,hasSymptom,What symptoms are associated with Medium-Chain Acyl-CoA Dehydrogenase Deficiency?,Hypoketotic Hypoglycemia; Lethargy
+125,Medium-Chain Acyl-CoA Dehydrogenase Deficiency,accumulatesMetabolite,Which metabolite accumulates in Medium-Chain Acyl-CoA Dehydrogenase Deficiency?,Medium-Chain Fatty Acids
+126,Medium-Chain Acyl-CoA Dehydrogenase Deficiency,hasCausativeGene,Which gene causes Medium-Chain Acyl-CoA Dehydrogenase Deficiency?,ACADM
+127,Very Long-Chain Acyl-CoA Dehydrogenase Deficiency,hasInheritancePattern,What is the inheritance pattern of Very Long-Chain Acyl-CoA Dehydrogenase Deficiency?,Autosomal Recessive
+128,Very Long-Chain Acyl-CoA Dehydrogenase Deficiency,treatedWith,How is Very Long-Chain Acyl-CoA Dehydrogenase Deficiency treated?,MCT Oil Dietary Therapy
+129,Very Long-Chain Acyl-CoA Dehydrogenase Deficiency,hasDeficientEnzyme,Which enzyme is deficient in Very Long-Chain Acyl-CoA Dehydrogenase Deficiency?,Very Long-Chain Acyl-CoA Dehydrogenase
+130,Very Long-Chain Acyl-CoA Dehydrogenase Deficiency,hasSymptom,What symptoms are associated with Very Long-Chain Acyl-CoA Dehydrogenase Deficiency?,Cardiomyopathy; Hypoglycemia
+131,Very Long-Chain Acyl-CoA Dehydrogenase Deficiency,accumulatesMetabolite,Which metabolite accumulates in Very Long-Chain Acyl-CoA Dehydrogenase Deficiency?,Long-Chain Fatty Acids
+132,Very Long-Chain Acyl-CoA Dehydrogenase Deficiency,hasCausativeGene,Which gene causes Very Long-Chain Acyl-CoA Dehydrogenase Deficiency?,ACADVL
+133,Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency,hasInheritancePattern,What is the inheritance pattern of Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency?,Autosomal Recessive
+134,Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency,treatedWith,How is Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency treated?,MCT Oil Dietary Therapy
+135,Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency,hasDeficientEnzyme,Which enzyme is deficient in Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency?,Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase
+136,Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency,hasSymptom,What symptoms are associated with Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency?,Peripheral Neuropathy; Retinopathy
+137,Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency,accumulatesMetabolite,Which metabolite accumulates in Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency?,3-Hydroxy Fatty Acids
+138,Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency,hasCausativeGene,Which gene causes Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency?,HADHA
+139,Carnitine Palmitoyltransferase II Deficiency,hasInheritancePattern,What is the inheritance pattern of Carnitine Palmitoyltransferase II Deficiency?,Autosomal Recessive
+140,Carnitine Palmitoyltransferase II Deficiency,treatedWith,How is Carnitine Palmitoyltransferase II Deficiency treated?,Low-Fat High-Carbohydrate Diet
+141,Carnitine Palmitoyltransferase II Deficiency,hasDeficientEnzyme,Which enzyme is deficient in Carnitine Palmitoyltransferase II Deficiency?,Carnitine Palmitoyltransferase II
+142,Carnitine Palmitoyltransferase II Deficiency,hasSymptom,What symptoms are associated with Carnitine Palmitoyltransferase II Deficiency?,Exercise-Induced Myalgia; Rhabdomyolysis
+143,Carnitine Palmitoyltransferase II Deficiency,accumulatesMetabolite,Which metabolite accumulates in Carnitine Palmitoyltransferase II Deficiency?,Long-Chain Acylcarnitines
+144,Carnitine Palmitoyltransferase II Deficiency,hasCausativeGene,Which gene causes Carnitine Palmitoyltransferase II Deficiency?,CPT2
+145,Primary Carnitine Deficiency,hasInheritancePattern,What is the inheritance pattern of Primary Carnitine Deficiency?,Autosomal Recessive
+146,Primary Carnitine Deficiency,treatedWith,How is Primary Carnitine Deficiency treated?,Carnitine Supplementation
+147,Primary Carnitine Deficiency,hasDeficientEnzyme,Which enzyme is deficient in Primary Carnitine Deficiency?,OCTN2 Carnitine Transporter
+148,Primary Carnitine Deficiency,hasSymptom,What symptoms are associated with Primary Carnitine Deficiency?,Cardiomyopathy; Muscle Weakness
+149,Primary Carnitine Deficiency,accumulatesMetabolite,Which metabolite accumulates in Primary Carnitine Deficiency?,Free Carnitine (Deficient)
+150,Primary Carnitine Deficiency,hasCausativeGene,Which gene causes Primary Carnitine Deficiency?,SLC22A5
+151,Fabry Disease,hasInheritancePattern,What is the inheritance pattern of Fabry Disease?,X-Linked
+152,Fabry Disease,treatedWith,How is Fabry Disease treated?,Enzyme Replacement Therapy
+153,Fabry Disease,hasDeficientEnzyme,Which enzyme is deficient in Fabry Disease?,Alpha-Galactosidase A
+154,Fabry Disease,hasSymptom,What symptoms are associated with Fabry Disease?,Angiokeratoma; Neuropathic Pain; Renal Failure
+155,Fabry Disease,accumulatesMetabolite,Which metabolite accumulates in Fabry Disease?,Globotriaosylceramide
+156,Fabry Disease,hasCausativeGene,Which gene causes Fabry Disease?,GLA
+157,Gaucher Disease,hasInheritancePattern,What is the inheritance pattern of Gaucher Disease?,Autosomal Recessive
+158,Gaucher Disease,treatedWith,How is Gaucher Disease treated?,Enzyme Replacement Therapy
+159,Gaucher Disease,hasDeficientEnzyme,Which enzyme is deficient in Gaucher Disease?,Beta-Glucocerebrosidase
+160,Gaucher Disease,hasSymptom,What symptoms are associated with Gaucher Disease?,Bone Crises; Hepatosplenomegaly
+161,Gaucher Disease,accumulatesMetabolite,Which metabolite accumulates in Gaucher Disease?,Glucocerebroside
+162,Gaucher Disease,hasCausativeGene,Which gene causes Gaucher Disease?,GBA
+163,Pompe Disease,hasInheritancePattern,What is the inheritance pattern of Pompe Disease?,Autosomal Recessive
+164,Pompe Disease,treatedWith,How is Pompe Disease treated?,Enzyme Replacement Therapy
+165,Pompe Disease,hasDeficientEnzyme,Which enzyme is deficient in Pompe Disease?,Acid Alpha-Glucosidase
+166,Pompe Disease,hasSymptom,What symptoms are associated with Pompe Disease?,Cardiomyopathy; Muscle Weakness
+167,Pompe Disease,accumulatesMetabolite,Which metabolite accumulates in Pompe Disease?,Glycogen
+168,Pompe Disease,hasCausativeGene,Which gene causes Pompe Disease?,GAA
+169,Niemann-Pick Disease Type A,hasInheritancePattern,What is the inheritance pattern of Niemann-Pick Disease Type A?,Autosomal Recessive
+170,Niemann-Pick Disease Type A,treatedWith,How is Niemann-Pick Disease Type A treated?,Supportive Care
+171,Niemann-Pick Disease Type A,hasDeficientEnzyme,Which enzyme is deficient in Niemann-Pick Disease Type A?,Acid Sphingomyelinase
+172,Niemann-Pick Disease Type A,hasSymptom,What symptoms are associated with Niemann-Pick Disease Type A?,Hepatosplenomegaly; Progressive Neurodegeneration
+173,Niemann-Pick Disease Type A,accumulatesMetabolite,Which metabolite accumulates in Niemann-Pick Disease Type A?,Sphingomyelin
+174,Niemann-Pick Disease Type A,hasCausativeGene,Which gene causes Niemann-Pick Disease Type A?,SMPD1
+175,Tay-Sachs Disease,hasInheritancePattern,What is the inheritance pattern of Tay-Sachs Disease?,Autosomal Recessive
+176,Tay-Sachs Disease,treatedWith,How is Tay-Sachs Disease treated?,Supportive Care
+177,Tay-Sachs Disease,hasDeficientEnzyme,Which enzyme is deficient in Tay-Sachs Disease?,Hexosaminidase A
+178,Tay-Sachs Disease,hasSymptom,What symptoms are associated with Tay-Sachs Disease?,Cherry-Red Spot; Progressive Neurodegeneration
+179,Tay-Sachs Disease,accumulatesMetabolite,Which metabolite accumulates in Tay-Sachs Disease?,GM2 Ganglioside
+180,Tay-Sachs Disease,hasCausativeGene,Which gene causes Tay-Sachs Disease?,HEXA
+181,Krabbe Disease,hasInheritancePattern,What is the inheritance pattern of Krabbe Disease?,Autosomal Recessive
+182,Krabbe Disease,treatedWith,How is Krabbe Disease treated?,Hematopoietic Stem Cell Transplant
+183,Krabbe Disease,hasDeficientEnzyme,Which enzyme is deficient in Krabbe Disease?,Galactocerebrosidase
+184,Krabbe Disease,hasSymptom,What symptoms are associated with Krabbe Disease?,Demyelination; Irritability
+185,Krabbe Disease,accumulatesMetabolite,Which metabolite accumulates in Krabbe Disease?,Psychosine
+186,Krabbe Disease,hasCausativeGene,Which gene causes Krabbe Disease?,GALC
+187,Metachromatic Leukodystrophy,hasInheritancePattern,What is the inheritance pattern of Metachromatic Leukodystrophy?,Autosomal Recessive
+188,Metachromatic Leukodystrophy,treatedWith,How is Metachromatic Leukodystrophy treated?,Hematopoietic Stem Cell Transplant
+189,Metachromatic Leukodystrophy,hasDeficientEnzyme,Which enzyme is deficient in Metachromatic Leukodystrophy?,Arylsulfatase A
+190,Metachromatic Leukodystrophy,hasSymptom,What symptoms are associated with Metachromatic Leukodystrophy?,Demyelination; Gait Disturbance
+191,Metachromatic Leukodystrophy,accumulatesMetabolite,Which metabolite accumulates in Metachromatic Leukodystrophy?,Sulfatide
+192,Metachromatic Leukodystrophy,hasCausativeGene,Which gene causes Metachromatic Leukodystrophy?,ARSA
+193,Mucopolysaccharidosis Type I (Hurler Syndrome),hasInheritancePattern,What is the inheritance pattern of Mucopolysaccharidosis Type I (Hurler Syndrome)?,Autosomal Recessive
+194,Mucopolysaccharidosis Type I (Hurler Syndrome),treatedWith,How is Mucopolysaccharidosis Type I (Hurler Syndrome) treated?,Enzyme Replacement Therapy
+195,Mucopolysaccharidosis Type I (Hurler Syndrome),hasDeficientEnzyme,Which enzyme is deficient in Mucopolysaccharidosis Type I (Hurler Syndrome)?,Alpha-L-Iduronidase
+196,Mucopolysaccharidosis Type I (Hurler Syndrome),hasSymptom,What symptoms are associated with Mucopolysaccharidosis Type I (Hurler Syndrome)?,Coarse Facial Features; Hepatosplenomegaly
+197,Mucopolysaccharidosis Type I (Hurler Syndrome),accumulatesMetabolite,Which metabolite accumulates in Mucopolysaccharidosis Type I (Hurler Syndrome)?,Dermatan Sulfate
+198,Mucopolysaccharidosis Type I (Hurler Syndrome),hasCausativeGene,Which gene causes Mucopolysaccharidosis Type I (Hurler Syndrome)?,IDUA
+199,Mucopolysaccharidosis Type II (Hunter Syndrome),hasInheritancePattern,What is the inheritance pattern of Mucopolysaccharidosis Type II (Hunter Syndrome)?,X-Linked
+200,Mucopolysaccharidosis Type II (Hunter Syndrome),treatedWith,How is Mucopolysaccharidosis Type II (Hunter Syndrome) treated?,Enzyme Replacement Therapy
+201,Mucopolysaccharidosis Type II (Hunter Syndrome),hasDeficientEnzyme,Which enzyme is deficient in Mucopolysaccharidosis Type II (Hunter Syndrome)?,Iduronate-2-Sulfatase
+202,Mucopolysaccharidosis Type II (Hunter Syndrome),hasSymptom,What symptoms are associated with Mucopolysaccharidosis Type II (Hunter Syndrome)?,Coarse Facial Features; Joint Stiffness
+203,Mucopolysaccharidosis Type II (Hunter Syndrome),accumulatesMetabolite,Which metabolite accumulates in Mucopolysaccharidosis Type II (Hunter Syndrome)?,Heparan Sulfate
+204,Mucopolysaccharidosis Type II (Hunter Syndrome),hasCausativeGene,Which gene causes Mucopolysaccharidosis Type II (Hunter Syndrome)?,IDS
+205,Fucosidosis,hasInheritancePattern,What is the inheritance pattern of Fucosidosis?,Autosomal Recessive
+206,Fucosidosis,treatedWith,How is Fucosidosis treated?,Supportive Care
+207,Fucosidosis,hasDeficientEnzyme,Which enzyme is deficient in Fucosidosis?,Alpha-L-Fucosidase
+208,Fucosidosis,hasSymptom,What symptoms are associated with Fucosidosis?,Angiokeratoma; Coarse Facial Features
+209,Fucosidosis,accumulatesMetabolite,Which metabolite accumulates in Fucosidosis?,Fucose-Containing Glycolipids
+210,Fucosidosis,hasCausativeGene,Which gene causes Fucosidosis?,FUCA1
+211,Glycogen Storage Disease Type I (Von Gierke Disease),hasInheritancePattern,What is the inheritance pattern of Glycogen Storage Disease Type I (Von Gierke Disease)?,Autosomal Recessive
+212,Glycogen Storage Disease Type I (Von Gierke Disease),treatedWith,How is Glycogen Storage Disease Type I (Von Gierke Disease) treated?,Uncooked Cornstarch Therapy
+213,Glycogen Storage Disease Type I (Von Gierke Disease),hasDeficientEnzyme,Which enzyme is deficient in Glycogen Storage Disease Type I (Von Gierke Disease)?,Glucose-6-Phosphatase
+214,Glycogen Storage Disease Type I (Von Gierke Disease),hasSymptom,What symptoms are associated with Glycogen Storage Disease Type I (Von Gierke Disease)?,Hepatomegaly; Hypoglycemia
+215,Glycogen Storage Disease Type I (Von Gierke Disease),accumulatesMetabolite,Which metabolite accumulates in Glycogen Storage Disease Type I (Von Gierke Disease)?,Glycogen
+216,Glycogen Storage Disease Type I (Von Gierke Disease),hasCausativeGene,Which gene causes Glycogen Storage Disease Type I (Von Gierke Disease)?,G6PC
+217,Glycogen Storage Disease Type III (Cori Disease),hasInheritancePattern,What is the inheritance pattern of Glycogen Storage Disease Type III (Cori Disease)?,Autosomal Recessive
+218,Glycogen Storage Disease Type III (Cori Disease),treatedWith,How is Glycogen Storage Disease Type III (Cori Disease) treated?,High-Protein Diet
+219,Glycogen Storage Disease Type III (Cori Disease),hasDeficientEnzyme,Which enzyme is deficient in Glycogen Storage Disease Type III (Cori Disease)?,Glycogen Debranching Enzyme
+220,Glycogen Storage Disease Type III (Cori Disease),hasSymptom,What symptoms are associated with Glycogen Storage Disease Type III (Cori Disease)?,Hepatomegaly; Hypoglycemia
+221,Glycogen Storage Disease Type III (Cori Disease),accumulatesMetabolite,Which metabolite accumulates in Glycogen Storage Disease Type III (Cori Disease)?,Limit Dextrin
+222,Glycogen Storage Disease Type III (Cori Disease),hasCausativeGene,Which gene causes Glycogen Storage Disease Type III (Cori Disease)?,AGL
+223,Glycogen Storage Disease Type V (McArdle Disease),hasInheritancePattern,What is the inheritance pattern of Glycogen Storage Disease Type V (McArdle Disease)?,Autosomal Recessive
+224,Glycogen Storage Disease Type V (McArdle Disease),treatedWith,How is Glycogen Storage Disease Type V (McArdle Disease) treated?,Avoidance of Strenuous Exercise
+225,Glycogen Storage Disease Type V (McArdle Disease),hasDeficientEnzyme,Which enzyme is deficient in Glycogen Storage Disease Type V (McArdle Disease)?,Myophosphorylase
+226,Glycogen Storage Disease Type V (McArdle Disease),hasSymptom,What symptoms are associated with Glycogen Storage Disease Type V (McArdle Disease)?,Exercise Intolerance; Myalgia
+227,Glycogen Storage Disease Type V (McArdle Disease),accumulatesMetabolite,Which metabolite accumulates in Glycogen Storage Disease Type V (McArdle Disease)?,Glycogen
+228,Glycogen Storage Disease Type V (McArdle Disease),hasCausativeGene,Which gene causes Glycogen Storage Disease Type V (McArdle Disease)?,PYGM
+229,Zellweger Syndrome,hasInheritancePattern,What is the inheritance pattern of Zellweger Syndrome?,Autosomal Recessive
+230,Zellweger Syndrome,treatedWith,How is Zellweger Syndrome treated?,Supportive Care
+231,Zellweger Syndrome,hasDeficientEnzyme,Which enzyme is deficient in Zellweger Syndrome?,Peroxin-1
+232,Zellweger Syndrome,hasSymptom,What symptoms are associated with Zellweger Syndrome?,Craniofacial Abnormalities; Hypotonia
+233,Zellweger Syndrome,accumulatesMetabolite,Which metabolite accumulates in Zellweger Syndrome?,Very Long-Chain Fatty Acids
+234,Zellweger Syndrome,hasCausativeGene,Which gene causes Zellweger Syndrome?,PEX1
+235,X-Linked Adrenoleukodystrophy,hasInheritancePattern,What is the inheritance pattern of X-Linked Adrenoleukodystrophy?,X-Linked
+236,X-Linked Adrenoleukodystrophy,treatedWith,How is X-Linked Adrenoleukodystrophy treated?,Hematopoietic Stem Cell Transplant
+237,X-Linked Adrenoleukodystrophy,hasDeficientEnzyme,Which enzyme is deficient in X-Linked Adrenoleukodystrophy?,ALD Protein
+238,X-Linked Adrenoleukodystrophy,hasSymptom,What symptoms are associated with X-Linked Adrenoleukodystrophy?,Adrenal Insufficiency; Demyelination
+239,X-Linked Adrenoleukodystrophy,accumulatesMetabolite,Which metabolite accumulates in X-Linked Adrenoleukodystrophy?,Very Long-Chain Fatty Acids
+240,X-Linked Adrenoleukodystrophy,hasCausativeGene,Which gene causes X-Linked Adrenoleukodystrophy?,ABCD1
+241,Refsum Disease,hasInheritancePattern,What is the inheritance pattern of Refsum Disease?,Autosomal Recessive
+242,Refsum Disease,treatedWith,How is Refsum Disease treated?,Dietary Phytanic Acid Restriction
+243,Refsum Disease,hasDeficientEnzyme,Which enzyme is deficient in Refsum Disease?,Phytanoyl-CoA Hydroxylase
+244,Refsum Disease,hasSymptom,What symptoms are associated with Refsum Disease?,Peripheral Neuropathy; Retinitis Pigmentosa
+245,Refsum Disease,accumulatesMetabolite,Which metabolite accumulates in Refsum Disease?,Phytanic Acid
+246,Refsum Disease,hasCausativeGene,Which gene causes Refsum Disease?,PHYH
+247,Wilson Disease,hasInheritancePattern,What is the inheritance pattern of Wilson Disease?,Autosomal Recessive
+248,Wilson Disease,treatedWith,How is Wilson Disease treated?,Penicillamine Therapy
+249,Wilson Disease,hasDeficientEnzyme,Which enzyme is deficient in Wilson Disease?,Copper-Transporting ATPase 2
+250,Wilson Disease,hasSymptom,What symptoms are associated with Wilson Disease?,Hepatolenticular Degeneration; Kayser-Fleischer Rings
+251,Wilson Disease,accumulatesMetabolite,Which metabolite accumulates in Wilson Disease?,Copper
+252,Wilson Disease,hasCausativeGene,Which gene causes Wilson Disease?,ATP7B
+253,Menkes Disease,hasInheritancePattern,What is the inheritance pattern of Menkes Disease?,X-Linked
+254,Menkes Disease,treatedWith,How is Menkes Disease treated?,Copper Histidine Injections
+255,Menkes Disease,hasDeficientEnzyme,Which enzyme is deficient in Menkes Disease?,Copper-Transporting ATPase 1
+256,Menkes Disease,hasSymptom,What symptoms are associated with Menkes Disease?,Hair Abnormalities; Progressive Neurodegeneration
+257,Menkes Disease,accumulatesMetabolite,Which metabolite accumulates in Menkes Disease?,Copper (Deficient)
+258,Menkes Disease,hasCausativeGene,Which gene causes Menkes Disease?,ATP7A
+259,Hereditary Hemochromatosis,hasInheritancePattern,What is the inheritance pattern of Hereditary Hemochromatosis?,Autosomal Recessive
+260,Hereditary Hemochromatosis,treatedWith,How is Hereditary Hemochromatosis treated?,Therapeutic Phlebotomy
+261,Hereditary Hemochromatosis,hasDeficientEnzyme,Which enzyme is deficient in Hereditary Hemochromatosis?,HFE Protein
+262,Hereditary Hemochromatosis,hasSymptom,What symptoms are associated with Hereditary Hemochromatosis?,Diabetes Mellitus; Liver Cirrhosis
+263,Hereditary Hemochromatosis,accumulatesMetabolite,Which metabolite accumulates in Hereditary Hemochromatosis?,Iron
+264,Hereditary Hemochromatosis,hasCausativeGene,Which gene causes Hereditary Hemochromatosis?,HFE
+265,Biotinidase Deficiency,hasInheritancePattern,What is the inheritance pattern of Biotinidase Deficiency?,Autosomal Recessive
+266,Biotinidase Deficiency,treatedWith,How is Biotinidase Deficiency treated?,Biotin Supplementation
+267,Biotinidase Deficiency,hasDeficientEnzyme,Which enzyme is deficient in Biotinidase Deficiency?,Biotinidase
+268,Biotinidase Deficiency,hasSymptom,What symptoms are associated with Biotinidase Deficiency?,Alopecia; Seizures
+269,Biotinidase Deficiency,accumulatesMetabolite,Which metabolite accumulates in Biotinidase Deficiency?,Biotin (Deficient)
+270,Biotinidase Deficiency,hasCausativeGene,Which gene causes Biotinidase Deficiency?,BTD
+271,Holocarboxylase Synthetase Deficiency,hasInheritancePattern,What is the inheritance pattern of Holocarboxylase Synthetase Deficiency?,Autosomal Recessive
+272,Holocarboxylase Synthetase Deficiency,treatedWith,How is Holocarboxylase Synthetase Deficiency treated?,Biotin Supplementation
+273,Holocarboxylase Synthetase Deficiency,hasDeficientEnzyme,Which enzyme is deficient in Holocarboxylase Synthetase Deficiency?,Holocarboxylase Synthetase
+274,Holocarboxylase Synthetase Deficiency,hasSymptom,What symptoms are associated with Holocarboxylase Synthetase Deficiency?,Seizures; Skin Rash
+275,Holocarboxylase Synthetase Deficiency,accumulatesMetabolite,Which metabolite accumulates in Holocarboxylase Synthetase Deficiency?,Mixed Organic Acids
+276,Holocarboxylase Synthetase Deficiency,hasCausativeGene,Which gene causes Holocarboxylase Synthetase Deficiency?,HLCS
+277,Lesch-Nyhan Syndrome,hasInheritancePattern,What is the inheritance pattern of Lesch-Nyhan Syndrome?,X-Linked
+278,Lesch-Nyhan Syndrome,treatedWith,How is Lesch-Nyhan Syndrome treated?,Allopurinol Therapy
+279,Lesch-Nyhan Syndrome,hasDeficientEnzyme,Which enzyme is deficient in Lesch-Nyhan Syndrome?,Hypoxanthine-Guanine Phosphoribosyltransferase
+280,Lesch-Nyhan Syndrome,hasSymptom,What symptoms are associated with Lesch-Nyhan Syndrome?,Gout; Self-Injurious Behavior
+281,Lesch-Nyhan Syndrome,accumulatesMetabolite,Which metabolite accumulates in Lesch-Nyhan Syndrome?,Uric Acid
+282,Lesch-Nyhan Syndrome,hasCausativeGene,Which gene causes Lesch-Nyhan Syndrome?,HPRT1
+283,Familial Hypercholesterolemia,hasInheritancePattern,What is the inheritance pattern of Familial Hypercholesterolemia?,Autosomal Dominant
+284,Familial Hypercholesterolemia,treatedWith,How is Familial Hypercholesterolemia treated?,Statin Therapy
+285,Familial Hypercholesterolemia,hasDeficientEnzyme,Which enzyme is deficient in Familial Hypercholesterolemia?,LDL Receptor
+286,Familial Hypercholesterolemia,hasSymptom,What symptoms are associated with Familial Hypercholesterolemia?,Early Coronary Artery Disease; Xanthomas
+287,Familial Hypercholesterolemia,accumulatesMetabolite,Which metabolite accumulates in Familial Hypercholesterolemia?,LDL Cholesterol
+288,Familial Hypercholesterolemia,hasCausativeGene,Which gene causes Familial Hypercholesterolemia?,LDLR
+289,Ataxia-Telangiectasia,hasInheritancePattern,What is the inheritance pattern of Ataxia-Telangiectasia?,Autosomal Recessive
+290,Ataxia-Telangiectasia,treatedWith,How is Ataxia-Telangiectasia treated?,Supportive Care
+291,Ataxia-Telangiectasia,hasDeficientEnzyme,Which enzyme is deficient in Ataxia-Telangiectasia?,ATM Kinase
+292,Ataxia-Telangiectasia,hasSymptom,What symptoms are associated with Ataxia-Telangiectasia?,Cerebellar Ataxia; Telangiectasia
+293,Ataxia-Telangiectasia,accumulatesMetabolite,Which metabolite accumulates in Ataxia-Telangiectasia?,Impaired DNA-Damage Response Marker
+294,Ataxia-Telangiectasia,hasCausativeGene,Which gene causes Ataxia-Telangiectasia?,ATM
+295,Cystic Fibrosis,hasInheritancePattern,What is the inheritance pattern of Cystic Fibrosis?,Autosomal Recessive
+296,Cystic Fibrosis,treatedWith,How is Cystic Fibrosis treated?,CFTR Modulator Therapy
+297,Cystic Fibrosis,hasDeficientEnzyme,Which enzyme is deficient in Cystic Fibrosis?,Cystic Fibrosis Transmembrane Conductance Regulator
+298,Cystic Fibrosis,hasSymptom,What symptoms are associated with Cystic Fibrosis?,Chronic Lung Infection; Pancreatic Insufficiency
+299,Cystic Fibrosis,accumulatesMetabolite,Which metabolite accumulates in Cystic Fibrosis?,Chloride Ion Transport (Defective)
+300,Cystic Fibrosis,hasCausativeGene,Which gene causes Cystic Fibrosis?,CFTR

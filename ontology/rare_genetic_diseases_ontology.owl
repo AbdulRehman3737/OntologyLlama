@@ -1,0 +1,2020 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/rareGeneticDiseases/ontology#"
+     xml:base="http://www.semanticweb.org/rareGeneticDiseases/ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology">
+        <rdfs:comment>Rare monogenic / inborn-error-of-metabolism ontology for LLM+ontology evaluation research. Fifty diseases with gene, enzyme, metabolite, symptom, organ system, treatment and inheritance-pattern relations. NOTE: gene/enzyme/metabolite/symptom/treatment/inheritance associations reflect standard medical genetics knowledge; verify exact identifiers (OMIM/ORPHA codes) against Orphanet/OMIM before publication.</rdfs:comment>
+    </owl:Ontology>
+
+    <!-- ============ CLASSES ============ -->
+    <owl:Class rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#BiologicalEntity">
+        <rdfs:label>Biological Entity</rdfs:label>
+        <rdfs:comment>Root class for all domain entities in this ontology.</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#BiologicalEntity"/>
+        <rdfs:label>Disease</rdfs:label>
+        <rdfs:comment>A rare monogenic disease. Anchor class linking genes, enzymes, metabolites, symptoms and treatments.</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#AminoAcidMetabolismDisorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <rdfs:label>Amino Acid Metabolism Disorder</rdfs:label>
+        <rdfs:comment>Diseases classified biochemically as amino acid metabolism disorders.</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganicAcidemia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <rdfs:label>Organic Acidemia</rdfs:label>
+        <rdfs:comment>Diseases classified biochemically as organic acidemias.</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#UreaCycleDisorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <rdfs:label>Urea Cycle Disorder</rdfs:label>
+        <rdfs:comment>Diseases classified biochemically as urea cycle disorders.</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#FattyAcidOxidationDisorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <rdfs:label>Fatty Acid Oxidation Disorder</rdfs:label>
+        <rdfs:comment>Diseases classified biochemically as fatty acid oxidation disorders.</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#LysosomalStorageDisorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <rdfs:label>Lysosomal Storage Disorder</rdfs:label>
+        <rdfs:comment>Diseases classified biochemically as lysosomal storage disorders.</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GlycogenStorageDisease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <rdfs:label>Glycogen Storage Disease</rdfs:label>
+        <rdfs:comment>Diseases classified biochemically as glycogen storage diseases.</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#PeroxisomalDisorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <rdfs:label>Peroxisomal Disorder</rdfs:label>
+        <rdfs:comment>Diseases classified biochemically as peroxisomal disorders.</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#OtherMonogenicDisorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <rdfs:label>Other Monogenic Disorder</rdfs:label>
+        <rdfs:comment>Diseases classified biochemically as other monogenic disorders.</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#BiologicalEntity"/>
+        <rdfs:label>Gene</rdfs:label>
+        <rdfs:comment>A gene whose defect causes a disease.</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Protein">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#BiologicalEntity"/>
+        <rdfs:label>Protein</rdfs:label>
+        <rdfs:comment>A protein product of a gene.</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Protein"/>
+        <rdfs:label>Enzyme</rdfs:label>
+        <rdfs:comment>A catalytic protein; the functional consequence of a causative gene defect.</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#BiologicalEntity"/>
+        <rdfs:label>Metabolite</rdfs:label>
+        <rdfs:comment>A small-molecule substrate or product that accumulates or is deficient in a disease.</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#BiologicalEntity"/>
+        <rdfs:label>Phenotype</rdfs:label>
+        <rdfs:comment>A clinical symptom or finding associated with a disease.</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganSystem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#BiologicalEntity"/>
+        <rdfs:label>Organ System</rdfs:label>
+        <rdfs:comment>A coarse anatomical/physiological grouping that a phenotype affects.</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#BiologicalEntity"/>
+        <rdfs:label>Treatment</rdfs:label>
+        <rdfs:comment>A management or therapeutic intervention for a disease.</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Cofactor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#BiologicalEntity"/>
+        <rdfs:label>Cofactor</rdfs:label>
+        <rdfs:comment>A vitamin or small molecule required for enzyme function.</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#InheritancePattern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#BiologicalEntity"/>
+        <rdfs:label>Inheritance Pattern</rdfs:label>
+        <rdfs:comment>Mode of genetic inheritance (closed set of individuals).</rdfs:comment>
+    </owl:Class>
+    <owl:Class rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CofactorResponsiveDisorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <rdfs:label>Cofactor-Responsive Disorder</rdfs:label>
+        <rdfs:comment>Defined class: a disease whose deficient enzyme requires a cofactor. Membership should be inferred by the reasoner (HermiT/Pellet), not asserted directly, once the equivalentClass restriction below is added in Protege via the class expression editor: Disease and (hasDeficientEnzyme some (Enzyme and (requiresCofactor some Cofactor))).</rdfs:comment>
+    </owl:Class>
+
+    <!-- ============ OBJECT PROPERTIES ============ -->
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#hasCausativeGene">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>has causative gene</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#causesDisease">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#hasCausativeGene"/>
+        <rdfs:label>causes disease</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#encodes">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Protein"/>
+        <rdfs:label>encodes</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#encodedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Protein"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#encodes"/>
+        <rdfs:label>encoded by</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#hasDeficientEnzyme">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>has deficient enzyme</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#isDeficientEnzymeOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#hasDeficientEnzyme"/>
+        <rdfs:label>is deficient enzyme of</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#accumulatesMetabolite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>accumulates metabolite</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#isAccumulatedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#accumulatesMetabolite"/>
+        <rdfs:label>is accumulated in</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#hasSymptom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>has symptom</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#isSymptomOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#hasSymptom"/>
+        <rdfs:label>is symptom of</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#affectsOrganSystem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganSystem"/>
+        <rdfs:label>affects organ system</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#treatedWith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>treated with</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#isTreatmentFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#treatedWith"/>
+        <rdfs:label>is treatment for</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#hasInheritancePattern">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#InheritancePattern"/>
+        <rdfs:label>has inheritance pattern</rdfs:label>
+    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#requiresCofactor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Cofactor"/>
+        <rdfs:label>requires cofactor</rdfs:label>
+    </owl:ObjectProperty>
+
+    <!-- ============ DATA PROPERTIES ============ -->
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#geneSymbol">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>gene symbol</rdfs:label>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#hasOMIMId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has OMIM ID</rdfs:label>
+        <rdfs:comment>Not populated in this file — look up and fill in from omim.org before publication.</rdfs:comment>
+    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#hasOrphaCode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Disease"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>has Orphanet code</rdfs:label>
+        <rdfs:comment>Not populated in this file — look up and fill in from orpha.net before publication.</rdfs:comment>
+    </owl:DatatypeProperty>
+
+    <!-- ============ INDIVIDUALS: Inheritance Patterns ============ -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#InheritancePattern"/>
+        <rdfs:label>Autosomal Recessive</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalDominant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#InheritancePattern"/>
+        <rdfs:label>Autosomal Dominant</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#XLinked">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#InheritancePattern"/>
+        <rdfs:label>X-Linked</rdfs:label>
+    </owl:NamedIndividual>
+
+    <!-- ============ INDIVIDUALS: Organ Systems ============ -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Cardiovascular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganSystem"/>
+        <rdfs:label>Cardiovascular System</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Dermatologic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganSystem"/>
+        <rdfs:label>Dermatologic System</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Endocrine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganSystem"/>
+        <rdfs:label>Endocrine System</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GastrointestinalSystem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganSystem"/>
+        <rdfs:label>Gastrointestinal System</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hepatic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganSystem"/>
+        <rdfs:label>Hepatic System</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganSystem"/>
+        <rdfs:label>Metabolic System</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Muscular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganSystem"/>
+        <rdfs:label>Muscular System</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#NervousSystem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganSystem"/>
+        <rdfs:label>Nervous System</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Ocular">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganSystem"/>
+        <rdfs:label>Ocular System</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Renal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganSystem"/>
+        <rdfs:label>Renal System</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Respiratory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganSystem"/>
+        <rdfs:label>Respiratory System</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Skeletal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganSystem"/>
+        <rdfs:label>Skeletal System</rdfs:label>
+    </owl:NamedIndividual>
+
+    <!-- ============ INDIVIDUALS: Cofactors ============ -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Biotin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Cofactor"/>
+        <rdfs:label>Biotin</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#VitaminB12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Cofactor"/>
+        <rdfs:label>Vitamin B12</rdfs:label>
+    </owl:NamedIndividual>
+
+    <!-- ============ INDIVIDUALS: Treatments ============ -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#AllopurinolTherapy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Allopurinol Therapy</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ArginineSupplementation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Arginine Supplementation</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#AvoidanceOfFasting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Avoidance of Fasting</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#AvoidanceOfStrenuousExercise">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Avoidance of Strenuous Exercise</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#BiotinSupplementation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Biotin Supplementation</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#BranchedChainAminoAcidRestrictedDiet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Branched-Chain Amino Acid Restricted Diet</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CFTRModulatorTherapy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>CFTR Modulator Therapy</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CarglumicAcidTherapy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Carglumic Acid Therapy</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CarnitineSupplementation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Carnitine Supplementation</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CarnitineSupplementationWithLysineRestriction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Carnitine Supplementation with Lysine Restriction</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CopperHistidineInjections">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Copper Histidine Injections</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CornstarchTherapy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Uncooked Cornstarch Therapy</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#DietaryPhytanicAcidRestriction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Dietary Phytanic Acid Restriction</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#EnzymeReplacementTherapy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Enzyme Replacement Therapy</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HematopoieticStemCellTransplant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Hematopoietic Stem Cell Transplant</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HighProteinDiet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>High-Protein Diet</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#LeucineRestrictedDietWithGlycine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Leucine-Restricted Diet with Glycine</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#LowFatDiet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Low-Fat Diet</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#LowFatHighCarbohydrateDiet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Low-Fat High-Carbohydrate Diet</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#LowPhenylalanineDiet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Low-Phenylalanine Diet</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MCTOilDietaryTherapy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>MCT Oil Dietary Therapy</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#NicotinamideSupplementation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Nicotinamide Supplementation</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#NitisinoneTherapy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Nitisinone Therapy</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#PenicillamineTherapy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Penicillamine Therapy</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ProteinRestrictedDiet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Protein-Restricted Diet</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ProteinRestrictedDietWithBiotin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Protein-Restricted Diet with Biotin</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#SodiumBenzoateTherapy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Sodium Benzoate Therapy</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#StatinTherapy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Statin Therapy</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#SupportiveCare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Supportive Care</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#TherapeuticPhlebotomy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Therapeutic Phlebotomy</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#VitaminB12Supplementation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Vitamin B12 Supplementation</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#VitaminB6Supplementation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Treatment"/>
+        <rdfs:label>Vitamin B6 Supplementation</rdfs:label>
+    </owl:NamedIndividual>
+
+    <!-- ============ INDIVIDUALS: Phenotypes (with affectsOrganSystem) ============ -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#AdrenalInsufficiency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Adrenal Insufficiency</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Endocrine"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Alopecia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Alopecia</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Dermatologic"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Angiokeratoma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Angiokeratoma</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Dermatologic"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Arthritis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Arthritis</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Skeletal"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#BoneCrises">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Bone Crises</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Skeletal"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Cardiomyopathy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Cardiomyopathy</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Cardiovascular"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CerebellarAtaxia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Cerebellar Ataxia</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NervousSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CherryRedSpot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Cherry-Red Spot</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Ocular"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ChronicLungInfection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Chronic Lung Infection</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Respiratory"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CoarseFacialFeatures">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Coarse Facial Features</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Skeletal"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Coma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Coma</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NervousSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CraniofacialAbnormalities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Craniofacial Abnormalities</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Skeletal"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Demyelination">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Demyelination</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NervousSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#DevelopmentalDelay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Developmental Delay</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NervousSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Diabetes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Diabetes Mellitus</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Endocrine"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#DystonicMovementDisorder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Dystonic Movement Disorder</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NervousSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#EarlyCoronaryArteryDisease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Early Coronary Artery Disease</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Cardiovascular"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Encephalopathy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Encephalopathy</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NervousSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ExerciseIntolerance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Exercise Intolerance</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Muscular"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#FailureToThrive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Failure to Thrive</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolic"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GaitDisturbance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Gait Disturbance</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NervousSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gout">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Gout</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Skeletal"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HairAbnormalities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Hair Abnormalities</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Dermatologic"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HepatolenticularDegeneration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Hepatolenticular Degeneration</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hepatic"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hepatomegaly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Hepatomegaly</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hepatic"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hepatosplenomegaly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Hepatosplenomegaly</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hepatic"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hyperammonemia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Hyperammonemia</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolic"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hypoglycemia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Hypoglycemia</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolic"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HypoketoticHypoglycemia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Hypoketotic Hypoglycemia</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolic"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hypotonia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Hypotonia</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Muscular"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HypotoniaMild">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Mild Hypotonia</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Muscular"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#IntellectualDisability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Intellectual Disability</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NervousSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Irritability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Irritability</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NervousSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#JointStiffness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Joint Stiffness</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Skeletal"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#KayserFleischerRings">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Kayser-Fleischer Rings</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Ocular"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#KetoacidosisEpisodes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Episodic Ketoacidosis</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolic"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#LensDislocation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Lens Dislocation</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Ocular"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Lethargy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Lethargy</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NervousSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#LiverCirrhosis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Liver Cirrhosis</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hepatic"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#LiverFailure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Liver Failure</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hepatic"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Macrocephaly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Macrocephaly</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NervousSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MarfanoidHabitus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Marfanoid Habitus</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Skeletal"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MetabolicAcidosis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Metabolic Acidosis</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolic"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Microcephaly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Microcephaly</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NervousSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MuscleWeakness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Muscle Weakness</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Muscular"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Myalgia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Myalgia</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Muscular"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MyalgiaExerciseInduced">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Exercise-Induced Myalgia</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Muscular"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#NeurodegenerationProgressive">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Progressive Neurodegeneration</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NervousSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#NeuropathicPain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Neuropathic Pain</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NervousSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Ochronosis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Ochronosis</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Skeletal"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#PancreaticInsufficiency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Pancreatic Insufficiency</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GastrointestinalSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#PellagraLikeRash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Pellagra-Like Rash</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Dermatologic"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#PeripheralNeuropathy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Peripheral Neuropathy</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NervousSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ProgressiveIntellectualDisability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Progressive Intellectual Disability</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NervousSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#RenalFailure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Renal Failure</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Renal"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#RenalTubularDysfunction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Renal Tubular Dysfunction</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Renal"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#RetinitisPigmentosa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Retinitis Pigmentosa</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Ocular"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Retinopathy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Retinopathy</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Ocular"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Rhabdomyolysis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Rhabdomyolysis</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Muscular"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Seizures">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Seizures</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NervousSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#SelfInjuriousBehavior">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Self-Injurious Behavior</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NervousSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#SkinRash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Skin Rash</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Dermatologic"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Spasticity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Spasticity</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NervousSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#SweatyFeetOdor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Sweaty Feet Odor</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolic"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#SweetSmellingUrine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Sweet-Smelling Urine</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolic"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Telangiectasia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Telangiectasia</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Dermatologic"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Thromboembolism">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Thromboembolism</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Cardiovascular"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Trichorrhexis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Trichorrhexis Nodosa</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Dermatologic"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Vomiting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Vomiting</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GastrointestinalSystem"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Xanthomas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenotype"/>
+        <rdfs:label>Xanthomas</rdfs:label>
+        <affectsOrganSystem rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Dermatologic"/>
+    </owl:NamedIndividual>
+
+    <!-- ============ INDIVIDUALS: Metabolites ============ -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Ammonia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Ammonia</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Arginine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Arginine</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ArgininosuccinicAcid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Argininosuccinic Acid</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#BiotinDeficiencyMetabolite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Biotin (Deficient)</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CarnitineDeficiencyMetabolite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Free Carnitine (Deficient)</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ChlorideIonTransportDefectMetabolite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Chloride Ion Transport (Defective)</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Citrulline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Citrulline</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Copper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Copper</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CopperDeficiencyMetabolite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Copper (Deficient)</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#DNADamageResponseImpairedMetabolite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Impaired DNA-Damage Response Marker</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#DermatanSulfate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Dermatan Sulfate</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#FucoseContainingGlycolipids">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Fucose-Containing Glycolipids</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GM2Ganglioside">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>GM2 Ganglioside</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Globotriaosylceramide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Globotriaosylceramide</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Glucocerebroside">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Glucocerebroside</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GlutaricAcid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Glutaric Acid</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Glycine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Glycine</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Glycogen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Glycogen</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HeparanSulfate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Heparan Sulfate</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Homocysteine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Homocysteine</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HomogentisicAcid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Homogentisic Acid</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Iron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Iron</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#IsovalericAcid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Isovaleric Acid</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#LDLCholesterol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>LDL Cholesterol</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Leucine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Leucine</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#LimitDextrin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Limit Dextrin</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#LongChainAcylcarnitines">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Long-Chain Acylcarnitines</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#LongChainFattyAcids">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Long-Chain Fatty Acids</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MalonicAcid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Malonic Acid</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MediumChainFattyAcids">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Medium-Chain Fatty Acids</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MethylmalonicAcid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Methylmalonic Acid</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganicAcidsMixed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Mixed Organic Acids</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#OroticAcid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Orotic Acid</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenylalanine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Phenylalanine</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#PhytanicAcid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Phytanic Acid</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#PropionicAcid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Propionic Acid</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Psychosine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Psychosine</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Sphingomyelin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Sphingomyelin</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Succinylacetone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Succinylacetone</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Sulfatide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Sulfatide</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ThreeHydroxyFattyAcids">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>3-Hydroxy Fatty Acids</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ThreeMethylcrotonylglycine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>3-Methylcrotonylglycine</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Tryptophan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Tryptophan</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#TwoMethylThreeHydroxybutyricAcid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>2-Methyl-3-Hydroxybutyric Acid</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#UricAcid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Uric Acid</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#VeryLongChainFattyAcids">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Metabolite"/>
+        <rdfs:label>Very Long-Chain Fatty Acids</rdfs:label>
+    </owl:NamedIndividual>
+
+    <!-- ============ INDIVIDUALS: Genes ============ -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ABCD1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>ABCD1</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABCD1</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ACADM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>ACADM</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACADM</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ACADVL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>ACADVL</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACADVL</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ACAT1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>ACAT1</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACAT1</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#AGL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>AGL</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AGL</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ARG1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>ARG1</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARG1</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ARSA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>ARSA</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ARSA</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ASL">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>ASL</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ASL</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ASS1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>ASS1</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ASS1</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ATM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>ATM</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATM</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ATP7A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>ATP7A</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATP7A</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ATP7B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>ATP7B</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ATP7B</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#BCKDHA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>BCKDHA</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCKDHA</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#BTD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>BTD</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTD</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CBS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>CBS</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CBS</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CFTR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>CFTR</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CFTR</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CPS1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>CPS1</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CPS1</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CPT2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>CPT2</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CPT2</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#FAH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>FAH</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FAH</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#FUCA1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>FUCA1</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FUCA1</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#G6PC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>G6PC</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G6PC</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GAA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>GAA</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAA</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GALC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>GALC</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GALC</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GBA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>GBA</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GBA</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GCDH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>GCDH</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GCDH</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GLA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>GLA</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GLA</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GLDC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>GLDC</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GLDC</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HADHA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>HADHA</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HADHA</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HEXA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>HEXA</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HEXA</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HFE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>HFE</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HFE</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HGD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>HGD</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HGD</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HLCS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>HLCS</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HLCS</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HPRT1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>HPRT1</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HPRT1</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#IDS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>IDS</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDS</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#IDUA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>IDUA</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IDUA</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#IVD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>IVD</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IVD</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#LDLR">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>LDLR</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LDLR</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MCCC1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>MCCC1</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCCC1</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MLYCD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>MLYCD</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MLYCD</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MUT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>MUT</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MUT</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#NAGS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>NAGS</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NAGS</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#OTC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>OTC</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OTC</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#PAH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>PAH</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PAH</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#PCCA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>PCCA</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCCA</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#PEX1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>PEX1</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PEX1</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#PHYH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>PHYH</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PHYH</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#PYGM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>PYGM</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PYGM</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#SLC22A5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>SLC22A5</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLC22A5</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#SLC6A19">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>SLC6A19</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SLC6A19</geneSymbol>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#SMPD1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gene"/>
+        <rdfs:label>SMPD1</rdfs:label>
+        <geneSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SMPD1</geneSymbol>
+    </owl:NamedIndividual>
+
+    <!-- ============ INDIVIDUALS: Enzymes/Proteins (with encodedBy, requiresCofactor) ============ -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ALDProtein">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>ALD Protein</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ABCD1"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ATMKinase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>ATM Kinase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ATM"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#AcidAlphaGlucosidase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Acid Alpha-Glucosidase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GAA"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#AcidSphingomyelinase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Acid Sphingomyelinase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#SMPD1"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#AlphaGalactosidaseA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Alpha-Galactosidase A</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GLA"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#AlphaLFucosidase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Alpha-L-Fucosidase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#FUCA1"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#AlphaLIduronidase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Alpha-L-Iduronidase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#IDUA"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Arginase1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Arginase 1</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ARG1"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ArgininosuccinateLyase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Argininosuccinate Lyase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ASL"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ArgininosuccinateSynthase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Argininosuccinate Synthase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ASS1"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ArylsulfataseA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Arylsulfatase A</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ARSA"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#BetaKetothiolase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Beta-Ketothiolase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ACAT1"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Biotinidase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Biotinidase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#BTD"/>
+        <requiresCofactor rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Biotin"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#BranchedChainAlphaKetoacidDehydrogenase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Branched-Chain Alpha-Ketoacid Dehydrogenase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#BCKDHA"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CarbamoylPhosphateSynthetaseI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Carbamoyl Phosphate Synthetase I</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CPS1"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CarnitinePalmitoyltransferase2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Carnitine Palmitoyltransferase II</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CPT2"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CopperTransportingATPase1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Copper-Transporting ATPase 1</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ATP7A"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CopperTransportingATPase2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Copper-Transporting ATPase 2</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ATP7B"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CystathionineBetaSynthase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Cystathionine Beta-Synthase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CBS"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CysticFibrosisTransmembraneConductanceRegulator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Cystic Fibrosis Transmembrane Conductance Regulator</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CFTR"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Fumarylacetoacetase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Fumarylacetoacetase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#FAH"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Galactocerebrosidase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Galactocerebrosidase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GALC"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GlucocerebrosidaseBeta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Beta-Glucocerebrosidase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GBA"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GlucoseSixPhosphatase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Glucose-6-Phosphatase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#G6PC"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GlutarylCoADehydrogenase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Glutaryl-CoA Dehydrogenase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GCDH"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GlycineDecarboxylase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Glycine Decarboxylase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GLDC"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GlycogenDebranchingEnzyme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Glycogen Debranching Enzyme</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AGL"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HFEProtein">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>HFE Protein</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HFE"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HexosaminidaseA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Hexosaminidase A</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HEXA"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HolocarboxylaseSynthetase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Holocarboxylase Synthetase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HLCS"/>
+        <requiresCofactor rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Biotin"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HomogentisateDioxygenase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Homogentisate 1,2-Dioxygenase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HGD"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HypoxanthineGuaninePhosphoribosyltransferase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Hypoxanthine-Guanine Phosphoribosyltransferase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HPRT1"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#IduronateTwoSulfatase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Iduronate-2-Sulfatase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#IDS"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#IsovalerylCoADehydrogenase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Isovaleryl-CoA Dehydrogenase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#IVD"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#LDLReceptor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>LDL Receptor</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LDLR"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#LongChainThreeHydroxyacylCoADehydrogenase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HADHA"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MalonylCoADecarboxylase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Malonyl-CoA Decarboxylase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#MLYCD"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MediumChainAcylCoADehydrogenase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Medium-Chain Acyl-CoA Dehydrogenase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ACADM"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MethylmalonylCoAMutase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Methylmalonyl-CoA Mutase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#MUT"/>
+        <requiresCofactor rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#VitaminB12"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Myophosphorylase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Myophosphorylase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PYGM"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#NAcetylglutamateSynthase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>N-Acetylglutamate Synthase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NAGS"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#NeutralAminoAcidTransporterB0AT1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Neutral Amino Acid Transporter B(0)AT1</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#SLC6A19"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#OCTN2CarnitineTransporter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>OCTN2 Carnitine Transporter</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#SLC22A5"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrnithineTranscarbamylase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Ornithine Transcarbamylase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OTC"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Peroxin1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Peroxin-1</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PEX1"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#PhenylalanineHydroxylase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Phenylalanine Hydroxylase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PAH"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#PhytanoylCoAHydroxylase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Phytanoyl-CoA Hydroxylase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PHYH"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#PropionylCoACarboxylase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Propionyl-CoA Carboxylase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PCCA"/>
+        <requiresCofactor rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Biotin"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ThreeMethylcrotonylCoACarboxylase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>3-Methylcrotonyl-CoA Carboxylase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#MCCC1"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#VeryLongChainAcylCoADehydrogenase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Enzyme"/>
+        <rdfs:label>Very Long-Chain Acyl-CoA Dehydrogenase</rdfs:label>
+        <encodedBy rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ACADVL"/>
+    </owl:NamedIndividual>
+
+    <!-- ============ INDIVIDUALS: Diseases ============ -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenylketonuria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AminoAcidMetabolismDisorder"/>
+        <rdfs:label>Phenylketonuria</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PAH"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PhenylalanineHydroxylase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Phenylalanine"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#IntellectualDisability"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Microcephaly"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LowPhenylalanineDiet"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MapleSyrupUrineDisease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AminoAcidMetabolismDisorder"/>
+        <rdfs:label>Maple Syrup Urine Disease</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#BCKDHA"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#BranchedChainAlphaKetoacidDehydrogenase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Leucine"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Encephalopathy"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#SweetSmellingUrine"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#BranchedChainAminoAcidRestrictedDiet"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Homocystinuria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AminoAcidMetabolismDisorder"/>
+        <rdfs:label>Homocystinuria</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CBS"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CystathionineBetaSynthase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Homocysteine"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LensDislocation"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#MarfanoidHabitus"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Thromboembolism"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#VitaminB6Supplementation"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#TyrosinemiaTypeI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AminoAcidMetabolismDisorder"/>
+        <rdfs:label>Tyrosinemia Type I</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#FAH"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Fumarylacetoacetase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Succinylacetone"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LiverFailure"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#RenalTubularDysfunction"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NitisinoneTherapy"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Alkaptonuria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AminoAcidMetabolismDisorder"/>
+        <rdfs:label>Alkaptonuria</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HGD"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HomogentisateDioxygenase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HomogentisicAcid"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Ochronosis"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Arthritis"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NitisinoneTherapy"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#NonketoticHyperglycinemia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AminoAcidMetabolismDisorder"/>
+        <rdfs:label>Nonketotic Hyperglycinemia</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GLDC"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GlycineDecarboxylase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Glycine"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Seizures"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Encephalopathy"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#SodiumBenzoateTherapy"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CitrullinemiaTypeI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AminoAcidMetabolismDisorder"/>
+        <rdfs:label>Citrullinemia Type I</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ASS1"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ArgininosuccinateSynthase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Citrulline"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hyperammonemia"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Lethargy"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ProteinRestrictedDiet"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ArgininosuccinicAciduria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AminoAcidMetabolismDisorder"/>
+        <rdfs:label>Argininosuccinic Aciduria</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ASL"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ArgininosuccinateLyase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ArgininosuccinicAcid"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hyperammonemia"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Trichorrhexis"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ArginineSupplementation"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ArginaseDeficiency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AminoAcidMetabolismDisorder"/>
+        <rdfs:label>Arginase Deficiency</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ARG1"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Arginase1"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Arginine"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Spasticity"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ProgressiveIntellectualDisability"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ProteinRestrictedDiet"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HartnupDisease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AminoAcidMetabolismDisorder"/>
+        <rdfs:label>Hartnup Disease</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#SLC6A19"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NeutralAminoAcidTransporterB0AT1"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Tryptophan"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PellagraLikeRash"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CerebellarAtaxia"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NicotinamideSupplementation"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#PropionicAcidemia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganicAcidemia"/>
+        <rdfs:label>Propionic Acidemia</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PCCA"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PropionylCoACarboxylase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PropionicAcid"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hyperammonemia"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Lethargy"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ProteinRestrictedDietWithBiotin"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MethylmalonicAcidemia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganicAcidemia"/>
+        <rdfs:label>Methylmalonic Acidemia</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#MUT"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#MethylmalonylCoAMutase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#MethylmalonicAcid"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#MetabolicAcidosis"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#FailureToThrive"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#VitaminB12Supplementation"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#IsovalericAcidemia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganicAcidemia"/>
+        <rdfs:label>Isovaleric Acidemia</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#IVD"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#IsovalerylCoADehydrogenase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#IsovalericAcid"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#SweatyFeetOdor"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Vomiting"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LeucineRestrictedDietWithGlycine"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GlutaricAcidemiaTypeI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganicAcidemia"/>
+        <rdfs:label>Glutaric Acidemia Type I</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GCDH"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GlutarylCoADehydrogenase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GlutaricAcid"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Macrocephaly"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#DystonicMovementDisorder"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CarnitineSupplementationWithLysineRestriction"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ThreeMethylcrotonylCoACarboxylaseDeficiency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganicAcidemia"/>
+        <rdfs:label>3-Methylcrotonyl-CoA Carboxylase Deficiency</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#MCCC1"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ThreeMethylcrotonylCoACarboxylase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ThreeMethylcrotonylglycine"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HypotoniaMild"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CarnitineSupplementation"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#BetaKetothiolaseDeficiency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganicAcidemia"/>
+        <rdfs:label>Beta-Ketothiolase Deficiency</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ACAT1"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#BetaKetothiolase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#TwoMethylThreeHydroxybutyricAcid"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#KetoacidosisEpisodes"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ProteinRestrictedDiet"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MalonicAciduria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganicAcidemia"/>
+        <rdfs:label>Malonic Aciduria</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#MLYCD"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#MalonylCoADecarboxylase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#MalonicAcid"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Cardiomyopathy"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#DevelopmentalDelay"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LowFatDiet"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrnithineTranscarbamylaseDeficiency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#UreaCycleDisorder"/>
+        <rdfs:label>Ornithine Transcarbamylase Deficiency</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OTC"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrnithineTranscarbamylase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OroticAcid"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hyperammonemia"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Vomiting"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ProteinRestrictedDiet"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#XLinked"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CarbamoylPhosphateSynthetaseIDeficiency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#UreaCycleDisorder"/>
+        <rdfs:label>Carbamoyl Phosphate Synthetase I Deficiency</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CPS1"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CarbamoylPhosphateSynthetaseI"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Ammonia"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hyperammonemia"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Coma"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ProteinRestrictedDiet"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#NAcetylglutamateSynthaseDeficiency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#UreaCycleDisorder"/>
+        <rdfs:label>N-Acetylglutamate Synthase Deficiency</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NAGS"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NAcetylglutamateSynthase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Ammonia"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hyperammonemia"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CarglumicAcidTherapy"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MCADDeficiency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#FattyAcidOxidationDisorder"/>
+        <rdfs:label>Medium-Chain Acyl-CoA Dehydrogenase Deficiency</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ACADM"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#MediumChainAcylCoADehydrogenase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#MediumChainFattyAcids"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HypoketoticHypoglycemia"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Lethargy"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AvoidanceOfFasting"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#VLCADDeficiency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#FattyAcidOxidationDisorder"/>
+        <rdfs:label>Very Long-Chain Acyl-CoA Dehydrogenase Deficiency</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ACADVL"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#VeryLongChainAcylCoADehydrogenase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LongChainFattyAcids"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Cardiomyopathy"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hypoglycemia"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#MCTOilDietaryTherapy"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#LCHADDeficiency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#FattyAcidOxidationDisorder"/>
+        <rdfs:label>Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HADHA"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LongChainThreeHydroxyacylCoADehydrogenase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ThreeHydroxyFattyAcids"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Retinopathy"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PeripheralNeuropathy"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#MCTOilDietaryTherapy"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CPT2Deficiency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#FattyAcidOxidationDisorder"/>
+        <rdfs:label>Carnitine Palmitoyltransferase II Deficiency</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CPT2"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CarnitinePalmitoyltransferase2"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LongChainAcylcarnitines"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Rhabdomyolysis"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#MyalgiaExerciseInduced"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LowFatHighCarbohydrateDiet"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#PrimaryCarnitineDeficiency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#FattyAcidOxidationDisorder"/>
+        <rdfs:label>Primary Carnitine Deficiency</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#SLC22A5"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OCTN2CarnitineTransporter"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CarnitineDeficiencyMetabolite"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Cardiomyopathy"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#MuscleWeakness"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CarnitineSupplementation"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#FabryDisease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LysosomalStorageDisorder"/>
+        <rdfs:label>Fabry Disease</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GLA"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AlphaGalactosidaseA"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Globotriaosylceramide"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Angiokeratoma"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#RenalFailure"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NeuropathicPain"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#EnzymeReplacementTherapy"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#XLinked"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GaucherDisease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LysosomalStorageDisorder"/>
+        <rdfs:label>Gaucher Disease</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GBA"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GlucocerebrosidaseBeta"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Glucocerebroside"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hepatosplenomegaly"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#BoneCrises"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#EnzymeReplacementTherapy"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#PompeDisease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LysosomalStorageDisorder"/>
+        <rdfs:label>Pompe Disease</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GAA"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AcidAlphaGlucosidase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Glycogen"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Cardiomyopathy"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#MuscleWeakness"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#EnzymeReplacementTherapy"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#NiemannPickDiseaseTypeA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LysosomalStorageDisorder"/>
+        <rdfs:label>Niemann-Pick Disease Type A</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#SMPD1"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AcidSphingomyelinase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Sphingomyelin"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hepatosplenomegaly"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NeurodegenerationProgressive"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#SupportiveCare"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#TaySachsDisease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LysosomalStorageDisorder"/>
+        <rdfs:label>Tay-Sachs Disease</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HEXA"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HexosaminidaseA"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GM2Ganglioside"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CherryRedSpot"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NeurodegenerationProgressive"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#SupportiveCare"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#KrabbeDisease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LysosomalStorageDisorder"/>
+        <rdfs:label>Krabbe Disease</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GALC"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Galactocerebrosidase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Psychosine"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Demyelination"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Irritability"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HematopoieticStemCellTransplant"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MetachromaticLeukodystrophy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LysosomalStorageDisorder"/>
+        <rdfs:label>Metachromatic Leukodystrophy</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ARSA"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ArylsulfataseA"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Sulfatide"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Demyelination"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GaitDisturbance"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HematopoieticStemCellTransplant"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MucopolysaccharidosisTypeIHurler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LysosomalStorageDisorder"/>
+        <rdfs:label>Mucopolysaccharidosis Type I (Hurler Syndrome)</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#IDUA"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AlphaLIduronidase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#DermatanSulfate"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CoarseFacialFeatures"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hepatosplenomegaly"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#EnzymeReplacementTherapy"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MucopolysaccharidosisTypeIIHunter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LysosomalStorageDisorder"/>
+        <rdfs:label>Mucopolysaccharidosis Type II (Hunter Syndrome)</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#IDS"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#IduronateTwoSulfatase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HeparanSulfate"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CoarseFacialFeatures"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#JointStiffness"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#EnzymeReplacementTherapy"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#XLinked"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#Fucosidosis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LysosomalStorageDisorder"/>
+        <rdfs:label>Fucosidosis</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#FUCA1"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AlphaLFucosidase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#FucoseContainingGlycolipids"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CoarseFacialFeatures"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Angiokeratoma"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#SupportiveCare"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GlycogenStorageDiseaseTypeIVonGierke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GlycogenStorageDisease"/>
+        <rdfs:label>Glycogen Storage Disease Type I (Von Gierke Disease)</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#G6PC"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GlucoseSixPhosphatase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Glycogen"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hypoglycemia"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hepatomegaly"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CornstarchTherapy"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GlycogenStorageDiseaseTypeIIICori">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GlycogenStorageDisease"/>
+        <rdfs:label>Glycogen Storage Disease Type III (Cori Disease)</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AGL"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GlycogenDebranchingEnzyme"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LimitDextrin"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hepatomegaly"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hypoglycemia"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HighProteinDiet"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#GlycogenStorageDiseaseTypeVMcArdle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#GlycogenStorageDisease"/>
+        <rdfs:label>Glycogen Storage Disease Type V (McArdle Disease)</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PYGM"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Myophosphorylase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Glycogen"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ExerciseIntolerance"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Myalgia"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AvoidanceOfStrenuousExercise"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#ZellwegerSyndrome">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PeroxisomalDisorder"/>
+        <rdfs:label>Zellweger Syndrome</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PEX1"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Peroxin1"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#VeryLongChainFattyAcids"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Hypotonia"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CraniofacialAbnormalities"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#SupportiveCare"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#XLinkedAdrenoleukodystrophy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PeroxisomalDisorder"/>
+        <rdfs:label>X-Linked Adrenoleukodystrophy</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ABCD1"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ALDProtein"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#VeryLongChainFattyAcids"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AdrenalInsufficiency"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Demyelination"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HematopoieticStemCellTransplant"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#XLinked"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#RefsumDisease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PeroxisomalDisorder"/>
+        <rdfs:label>Refsum Disease</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PHYH"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PhytanoylCoAHydroxylase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PhytanicAcid"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#RetinitisPigmentosa"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PeripheralNeuropathy"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#DietaryPhytanicAcidRestriction"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#WilsonDisease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OtherMonogenicDisorder"/>
+        <rdfs:label>Wilson Disease</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ATP7B"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CopperTransportingATPase2"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Copper"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HepatolenticularDegeneration"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#KayserFleischerRings"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PenicillamineTherapy"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#MenkesDisease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OtherMonogenicDisorder"/>
+        <rdfs:label>Menkes Disease</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ATP7A"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CopperTransportingATPase1"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CopperDeficiencyMetabolite"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HairAbnormalities"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#NeurodegenerationProgressive"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CopperHistidineInjections"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#XLinked"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HereditaryHemochromatosis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OtherMonogenicDisorder"/>
+        <rdfs:label>Hereditary Hemochromatosis</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HFE"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HFEProtein"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Iron"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LiverCirrhosis"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Diabetes"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#TherapeuticPhlebotomy"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#BiotinidaseDeficiency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OtherMonogenicDisorder"/>
+        <rdfs:label>Biotinidase Deficiency</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#BTD"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Biotinidase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#BiotinDeficiencyMetabolite"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Seizures"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Alopecia"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#BiotinSupplementation"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#HolocarboxylaseSynthetaseDeficiency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OtherMonogenicDisorder"/>
+        <rdfs:label>Holocarboxylase Synthetase Deficiency</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HLCS"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HolocarboxylaseSynthetase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OrganicAcidsMixed"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Seizures"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#SkinRash"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#BiotinSupplementation"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#LeschNyhanSyndrome">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OtherMonogenicDisorder"/>
+        <rdfs:label>Lesch-Nyhan Syndrome</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HPRT1"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#HypoxanthineGuaninePhosphoribosyltransferase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#UricAcid"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#SelfInjuriousBehavior"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Gout"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AllopurinolTherapy"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#XLinked"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#FamilialHypercholesterolemia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OtherMonogenicDisorder"/>
+        <rdfs:label>Familial Hypercholesterolemia</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LDLR"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LDLReceptor"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#LDLCholesterol"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Xanthomas"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#EarlyCoronaryArteryDisease"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#StatinTherapy"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalDominant"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#AtaxiaTelangiectasia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OtherMonogenicDisorder"/>
+        <rdfs:label>Ataxia-Telangiectasia</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ATM"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ATMKinase"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#DNADamageResponseImpairedMetabolite"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CerebellarAtaxia"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#Telangiectasia"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#SupportiveCare"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rareGeneticDiseases/ontology#CysticFibrosis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#OtherMonogenicDisorder"/>
+        <rdfs:label>Cystic Fibrosis</rdfs:label>
+        <hasCausativeGene rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CFTR"/>
+        <hasDeficientEnzyme rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CysticFibrosisTransmembraneConductanceRegulator"/>
+        <accumulatesMetabolite rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ChlorideIonTransportDefectMetabolite"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#ChronicLungInfection"/>
+        <hasSymptom rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#PancreaticInsufficiency"/>
+        <treatedWith rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#CFTRModulatorTherapy"/>
+        <hasInheritancePattern rdf:resource="http://www.semanticweb.org/rareGeneticDiseases/ontology#AutosomalRecessive"/>
+    </owl:NamedIndividual>
+
+</rdf:RDF>
