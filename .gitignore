@@ -2,3 +2,7 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+# OntoEvolve: re-downloadable inputs and regenerable caches
+onto-evolve/data/raw/
+onto-evolve/data/cache/
+*.sqlite
