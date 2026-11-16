@@ -4,7 +4,6 @@ Research on putting an ontology layer between a small LLM (TinyLlama 1.1B) and i
 
 ## Contents
 - **[`onto-vs-rag/`](onto-vs-rag/)** — controlled benchmark: closed-book vs vector RAG vs ontology layer vs ontology + verification, 336 questions, same knowledge source for every arm. Results: [`onto-vs-rag/results/report.md`](onto-vs-rag/results/report.md). How to run: [`onto-vs-rag/README.md`](onto-vs-rag/README.md).
-- Root folders (`evaluation/`, `llm/`, `retriever/`, `ontology/`, `results/`, `main.py`) — the earlier prototype, kept unchanged.
 
 ## Headline result (onto-vs-rag)
 | Arm | Accuracy (95% CI) |
