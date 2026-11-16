@@ -15,5 +15,5 @@ Research on putting an ontology layer between a small LLM (TinyLlama 1.1B) and i
 
 Grades are automatic and audited by Claude, not yet by human annotators; see the report's "Threats to validity".
 
-## Next
-OntoEvolve: an ontology that updates itself from a selected source (PubMed first), with reasoner-gated updates, back-tested against real HPO/MONDO curator releases.
+## In progress
+- **[`onto-evolve/`](onto-evolve/)**: OntoEvolve, an ontology that updates itself from a selected source (PubMed first), with schema-certified gaps and reasoner-gated updates, back-tested against real HPO curator releases (2023 to 2026). See [`onto-evolve/README.md`](onto-evolve/README.md).

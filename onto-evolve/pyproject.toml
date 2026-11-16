@@ -1,0 +1,24 @@
+[project]
+name = "onto-evolve"
+version = "0.1.0"
+description = "Self-updating ontology RAG: schema-certified gaps, reasoner-gated updates, back-tested against HPO curator releases"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "rdflib>=7.0",
+  "owlready2>=0.46",
+  "sentence-transformers>=3.0",
+  "rapidfuzz>=3.9",
+  "ollama>=0.4",
+  "pandas>=2.2",
+  "matplotlib>=3.9",
+  "scipy>=1.13",
+  "requests>=2.32",
+  "pytest>=8.0",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
