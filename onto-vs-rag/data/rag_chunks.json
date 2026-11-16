@@ -1,0 +1,1298 @@
+[
+ {
+  "id": "disease:Alkaptonuria",
+  "text": "Alkaptonuria is an amino acid metabolism disorder. It is caused by mutations in the HGD gene. The deficient enzyme or protein is Homogentisate 1,2-Dioxygenase. The metabolite that accumulates is Homogentisic Acid. Symptoms include arthritis and ochronosis. It is treated with nitisinone therapy. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:ArginaseDeficiency",
+  "text": "Arginase Deficiency is an amino acid metabolism disorder. It is caused by mutations in the ARG1 gene. The deficient enzyme or protein is Arginase 1. The metabolite that accumulates is Arginine. Symptoms include progressive intellectual disability and spasticity. It is treated with protein-restricted diet. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:ArgininosuccinicAciduria",
+  "text": "Argininosuccinic Aciduria is an amino acid metabolism disorder. It is caused by mutations in the ASL gene. The deficient enzyme or protein is Argininosuccinate Lyase. The metabolite that accumulates is Argininosuccinic Acid. Symptoms include hyperammonemia and trichorrhexis nodosa. It is treated with arginine supplementation. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:AtaxiaTelangiectasia",
+  "text": "Ataxia-Telangiectasia is an other monogenic disorder. It is caused by mutations in the ATM gene. The deficient enzyme or protein is ATM Kinase. The metabolite that accumulates is Impaired DNA-Damage Response Marker. Symptoms include cerebellar ataxia and telangiectasia. It is treated with supportive care. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:BetaKetothiolaseDeficiency",
+  "text": "Beta-Ketothiolase Deficiency is an organic acidemia. It is caused by mutations in the ACAT1 gene. The deficient enzyme or protein is Beta-Ketothiolase. The metabolite that accumulates is 2-Methyl-3-Hydroxybutyric Acid. Symptoms include episodic ketoacidosis. It is treated with protein-restricted diet. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:BiotinidaseDeficiency",
+  "text": "Biotinidase Deficiency is an other monogenic disorder. Biotinidase Deficiency is a cofactor-responsive disorder. It is caused by mutations in the BTD gene. The deficient enzyme or protein is Biotinidase. The metabolite that accumulates is Biotin (Deficient). Symptoms include alopecia and seizures. It is treated with biotin supplementation. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:CPT2Deficiency",
+  "text": "Carnitine Palmitoyltransferase II Deficiency is a fatty acid oxidation disorder. It is caused by mutations in the CPT2 gene. The deficient enzyme or protein is Carnitine Palmitoyltransferase II. The metabolite that accumulates is Long-Chain Acylcarnitines. Symptoms include exercise-induced myalgia and rhabdomyolysis. It is treated with low-fat high-carbohydrate diet. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:CarbamoylPhosphateSynthetaseIDeficiency",
+  "text": "Carbamoyl Phosphate Synthetase I Deficiency is an urea cycle disorder. It is caused by mutations in the CPS1 gene. The deficient enzyme or protein is Carbamoyl Phosphate Synthetase I. The metabolite that accumulates is Ammonia. Symptoms include coma and hyperammonemia. It is treated with protein-restricted diet. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:CitrullinemiaTypeI",
+  "text": "Citrullinemia Type I is an amino acid metabolism disorder. It is caused by mutations in the ASS1 gene. The deficient enzyme or protein is Argininosuccinate Synthase. The metabolite that accumulates is Citrulline. Symptoms include hyperammonemia and lethargy. It is treated with protein-restricted diet. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:CysticFibrosis",
+  "text": "Cystic Fibrosis is an other monogenic disorder. It is caused by mutations in the CFTR gene. The deficient enzyme or protein is Cystic Fibrosis Transmembrane Conductance Regulator. The metabolite that accumulates is Chloride Ion Transport (Defective). Symptoms include chronic lung infection and pancreatic insufficiency. It is treated with cftr modulator therapy. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:FabryDisease",
+  "text": "Fabry Disease is a lysosomal storage disorder. It is caused by mutations in the GLA gene. The deficient enzyme or protein is Alpha-Galactosidase A. The metabolite that accumulates is Globotriaosylceramide. Symptoms include angiokeratoma, neuropathic pain and renal failure. It is treated with enzyme replacement therapy. Inheritance is x-linked."
+ },
+ {
+  "id": "disease:FamilialHypercholesterolemia",
+  "text": "Familial Hypercholesterolemia is an other monogenic disorder. It is caused by mutations in the LDLR gene. The deficient enzyme or protein is LDL Receptor. The metabolite that accumulates is LDL Cholesterol. Symptoms include early coronary artery disease and xanthomas. It is treated with statin therapy. Inheritance is autosomal dominant."
+ },
+ {
+  "id": "disease:Fucosidosis",
+  "text": "Fucosidosis is a lysosomal storage disorder. It is caused by mutations in the FUCA1 gene. The deficient enzyme or protein is Alpha-L-Fucosidase. The metabolite that accumulates is Fucose-Containing Glycolipids. Symptoms include angiokeratoma and coarse facial features. It is treated with supportive care. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:GaucherDisease",
+  "text": "Gaucher Disease is a lysosomal storage disorder. It is caused by mutations in the GBA gene. The deficient enzyme or protein is Beta-Glucocerebrosidase. The metabolite that accumulates is Glucocerebroside. Symptoms include bone crises and hepatosplenomegaly. It is treated with enzyme replacement therapy. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:GlutaricAcidemiaTypeI",
+  "text": "Glutaric Acidemia Type I is an organic acidemia. It is caused by mutations in the GCDH gene. The deficient enzyme or protein is Glutaryl-CoA Dehydrogenase. The metabolite that accumulates is Glutaric Acid. Symptoms include dystonic movement disorder and macrocephaly. It is treated with carnitine supplementation with lysine restriction. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:GlycogenStorageDiseaseTypeIIICori",
+  "text": "Glycogen Storage Disease Type III (Cori Disease) is a glycogen storage disease. It is caused by mutations in the AGL gene. The deficient enzyme or protein is Glycogen Debranching Enzyme. The metabolite that accumulates is Limit Dextrin. Symptoms include hepatomegaly and hypoglycemia. It is treated with high-protein diet. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:GlycogenStorageDiseaseTypeIVonGierke",
+  "text": "Glycogen Storage Disease Type I (Von Gierke Disease) is a glycogen storage disease. It is caused by mutations in the G6PC gene. The deficient enzyme or protein is Glucose-6-Phosphatase. The metabolite that accumulates is Glycogen. Symptoms include hepatomegaly and hypoglycemia. It is treated with uncooked cornstarch therapy. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:GlycogenStorageDiseaseTypeVMcArdle",
+  "text": "Glycogen Storage Disease Type V (McArdle Disease) is a glycogen storage disease. It is caused by mutations in the PYGM gene. The deficient enzyme or protein is Myophosphorylase. The metabolite that accumulates is Glycogen. Symptoms include exercise intolerance and myalgia. It is treated with avoidance of strenuous exercise. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:HartnupDisease",
+  "text": "Hartnup Disease is an amino acid metabolism disorder. It is caused by mutations in the SLC6A19 gene. The deficient enzyme or protein is Neutral Amino Acid Transporter B(0)AT1. The metabolite that accumulates is Tryptophan. Symptoms include cerebellar ataxia and pellagra-like rash. It is treated with nicotinamide supplementation. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:HereditaryHemochromatosis",
+  "text": "Hereditary Hemochromatosis is an other monogenic disorder. It is caused by mutations in the HFE gene. The deficient enzyme or protein is HFE Protein. The metabolite that accumulates is Iron. Symptoms include diabetes mellitus and liver cirrhosis. It is treated with therapeutic phlebotomy. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:HolocarboxylaseSynthetaseDeficiency",
+  "text": "Holocarboxylase Synthetase Deficiency is an other monogenic disorder. Holocarboxylase Synthetase Deficiency is a cofactor-responsive disorder. It is caused by mutations in the HLCS gene. The deficient enzyme or protein is Holocarboxylase Synthetase. The metabolite that accumulates is Mixed Organic Acids. Symptoms include seizures and skin rash. It is treated with biotin supplementation. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:Homocystinuria",
+  "text": "Homocystinuria is an amino acid metabolism disorder. It is caused by mutations in the CBS gene. The deficient enzyme or protein is Cystathionine Beta-Synthase. The metabolite that accumulates is Homocysteine. Symptoms include lens dislocation, marfanoid habitus and thromboembolism. It is treated with vitamin b6 supplementation. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:IsovalericAcidemia",
+  "text": "Isovaleric Acidemia is an organic acidemia. It is caused by mutations in the IVD gene. The deficient enzyme or protein is Isovaleryl-CoA Dehydrogenase. The metabolite that accumulates is Isovaleric Acid. Symptoms include sweaty feet odor and vomiting. It is treated with leucine-restricted diet with glycine. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:KrabbeDisease",
+  "text": "Krabbe Disease is a lysosomal storage disorder. It is caused by mutations in the GALC gene. The deficient enzyme or protein is Galactocerebrosidase. The metabolite that accumulates is Psychosine. Symptoms include demyelination and irritability. It is treated with hematopoietic stem cell transplant. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:LCHADDeficiency",
+  "text": "Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency is a fatty acid oxidation disorder. It is caused by mutations in the HADHA gene. The deficient enzyme or protein is Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase. The metabolite that accumulates is 3-Hydroxy Fatty Acids. Symptoms include peripheral neuropathy and retinopathy. It is treated with mct oil dietary therapy. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:LeschNyhanSyndrome",
+  "text": "Lesch-Nyhan Syndrome is an other monogenic disorder. It is caused by mutations in the HPRT1 gene. The deficient enzyme or protein is Hypoxanthine-Guanine Phosphoribosyltransferase. The metabolite that accumulates is Uric Acid. Symptoms include gout and self-injurious behavior. It is treated with allopurinol therapy. Inheritance is x-linked."
+ },
+ {
+  "id": "disease:MCADDeficiency",
+  "text": "Medium-Chain Acyl-CoA Dehydrogenase Deficiency is a fatty acid oxidation disorder. It is caused by mutations in the ACADM gene. The deficient enzyme or protein is Medium-Chain Acyl-CoA Dehydrogenase. The metabolite that accumulates is Medium-Chain Fatty Acids. Symptoms include hypoketotic hypoglycemia and lethargy. It is treated with avoidance of fasting. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:MalonicAciduria",
+  "text": "Malonic Aciduria is an organic acidemia. It is caused by mutations in the MLYCD gene. The deficient enzyme or protein is Malonyl-CoA Decarboxylase. The metabolite that accumulates is Malonic Acid. Symptoms include cardiomyopathy and developmental delay. It is treated with low-fat diet. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:MapleSyrupUrineDisease",
+  "text": "Maple Syrup Urine Disease is an amino acid metabolism disorder. It is caused by mutations in the BCKDHA gene. The deficient enzyme or protein is Branched-Chain Alpha-Ketoacid Dehydrogenase. The metabolite that accumulates is Leucine. Symptoms include encephalopathy and sweet-smelling urine. It is treated with branched-chain amino acid restricted diet. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:MenkesDisease",
+  "text": "Menkes Disease is an other monogenic disorder. It is caused by mutations in the ATP7A gene. The deficient enzyme or protein is Copper-Transporting ATPase 1. The metabolite that accumulates is Copper (Deficient). Symptoms include hair abnormalities and progressive neurodegeneration. It is treated with copper histidine injections. Inheritance is x-linked."
+ },
+ {
+  "id": "disease:MetachromaticLeukodystrophy",
+  "text": "Metachromatic Leukodystrophy is a lysosomal storage disorder. It is caused by mutations in the ARSA gene. The deficient enzyme or protein is Arylsulfatase A. The metabolite that accumulates is Sulfatide. Symptoms include demyelination and gait disturbance. It is treated with hematopoietic stem cell transplant. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:MethylmalonicAcidemia",
+  "text": "Methylmalonic Acidemia is an organic acidemia. Methylmalonic Acidemia is a cofactor-responsive disorder. It is caused by mutations in the MUT gene. The deficient enzyme or protein is Methylmalonyl-CoA Mutase. The metabolite that accumulates is Methylmalonic Acid. Symptoms include failure to thrive and metabolic acidosis. It is treated with vitamin b12 supplementation. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:MucopolysaccharidosisTypeIHurler",
+  "text": "Mucopolysaccharidosis Type I (Hurler Syndrome) is a lysosomal storage disorder. It is caused by mutations in the IDUA gene. The deficient enzyme or protein is Alpha-L-Iduronidase. The metabolite that accumulates is Dermatan Sulfate. Symptoms include coarse facial features and hepatosplenomegaly. It is treated with enzyme replacement therapy. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:MucopolysaccharidosisTypeIIHunter",
+  "text": "Mucopolysaccharidosis Type II (Hunter Syndrome) is a lysosomal storage disorder. It is caused by mutations in the IDS gene. The deficient enzyme or protein is Iduronate-2-Sulfatase. The metabolite that accumulates is Heparan Sulfate. Symptoms include coarse facial features and joint stiffness. It is treated with enzyme replacement therapy. Inheritance is x-linked."
+ },
+ {
+  "id": "disease:NAcetylglutamateSynthaseDeficiency",
+  "text": "N-Acetylglutamate Synthase Deficiency is an urea cycle disorder. It is caused by mutations in the NAGS gene. The deficient enzyme or protein is N-Acetylglutamate Synthase. The metabolite that accumulates is Ammonia. Symptoms include hyperammonemia. It is treated with carglumic acid therapy. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:NiemannPickDiseaseTypeA",
+  "text": "Niemann-Pick Disease Type A is a lysosomal storage disorder. It is caused by mutations in the SMPD1 gene. The deficient enzyme or protein is Acid Sphingomyelinase. The metabolite that accumulates is Sphingomyelin. Symptoms include hepatosplenomegaly and progressive neurodegeneration. It is treated with supportive care. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:NonketoticHyperglycinemia",
+  "text": "Nonketotic Hyperglycinemia is an amino acid metabolism disorder. It is caused by mutations in the GLDC gene. The deficient enzyme or protein is Glycine Decarboxylase. The metabolite that accumulates is Glycine. Symptoms include encephalopathy and seizures. It is treated with sodium benzoate therapy. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:OrnithineTranscarbamylaseDeficiency",
+  "text": "Ornithine Transcarbamylase Deficiency is an urea cycle disorder. It is caused by mutations in the OTC gene. The deficient enzyme or protein is Ornithine Transcarbamylase. The metabolite that accumulates is Orotic Acid. Symptoms include hyperammonemia and vomiting. It is treated with protein-restricted diet. Inheritance is x-linked."
+ },
+ {
+  "id": "disease:Phenylketonuria",
+  "text": "Phenylketonuria is an amino acid metabolism disorder. It is caused by mutations in the PAH gene. The deficient enzyme or protein is Phenylalanine Hydroxylase. The metabolite that accumulates is Phenylalanine. Symptoms include intellectual disability and microcephaly. It is treated with low-phenylalanine diet. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:PompeDisease",
+  "text": "Pompe Disease is a lysosomal storage disorder. It is caused by mutations in the GAA gene. The deficient enzyme or protein is Acid Alpha-Glucosidase. The metabolite that accumulates is Glycogen. Symptoms include cardiomyopathy and muscle weakness. It is treated with enzyme replacement therapy. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:PrimaryCarnitineDeficiency",
+  "text": "Primary Carnitine Deficiency is a fatty acid oxidation disorder. It is caused by mutations in the SLC22A5 gene. The deficient enzyme or protein is OCTN2 Carnitine Transporter. The metabolite that accumulates is Free Carnitine (Deficient). Symptoms include cardiomyopathy and muscle weakness. It is treated with carnitine supplementation. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:PropionicAcidemia",
+  "text": "Propionic Acidemia is an organic acidemia. Propionic Acidemia is a cofactor-responsive disorder. It is caused by mutations in the PCCA gene. The deficient enzyme or protein is Propionyl-CoA Carboxylase. The metabolite that accumulates is Propionic Acid. Symptoms include hyperammonemia and lethargy. It is treated with protein-restricted diet with biotin. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:RefsumDisease",
+  "text": "Refsum Disease is a peroxisomal disorder. It is caused by mutations in the PHYH gene. The deficient enzyme or protein is Phytanoyl-CoA Hydroxylase. The metabolite that accumulates is Phytanic Acid. Symptoms include peripheral neuropathy and retinitis pigmentosa. It is treated with dietary phytanic acid restriction. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:TaySachsDisease",
+  "text": "Tay-Sachs Disease is a lysosomal storage disorder. It is caused by mutations in the HEXA gene. The deficient enzyme or protein is Hexosaminidase A. The metabolite that accumulates is GM2 Ganglioside. Symptoms include cherry-red spot and progressive neurodegeneration. It is treated with supportive care. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:ThreeMethylcrotonylCoACarboxylaseDeficiency",
+  "text": "3-Methylcrotonyl-CoA Carboxylase Deficiency is an organic acidemia. It is caused by mutations in the MCCC1 gene. The deficient enzyme or protein is 3-Methylcrotonyl-CoA Carboxylase. The metabolite that accumulates is 3-Methylcrotonylglycine. Symptoms include mild hypotonia. It is treated with carnitine supplementation. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:TyrosinemiaTypeI",
+  "text": "Tyrosinemia Type I is an amino acid metabolism disorder. It is caused by mutations in the FAH gene. The deficient enzyme or protein is Fumarylacetoacetase. The metabolite that accumulates is Succinylacetone. Symptoms include liver failure and renal tubular dysfunction. It is treated with nitisinone therapy. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:VLCADDeficiency",
+  "text": "Very Long-Chain Acyl-CoA Dehydrogenase Deficiency is a fatty acid oxidation disorder. It is caused by mutations in the ACADVL gene. The deficient enzyme or protein is Very Long-Chain Acyl-CoA Dehydrogenase. The metabolite that accumulates is Long-Chain Fatty Acids. Symptoms include cardiomyopathy and hypoglycemia. It is treated with mct oil dietary therapy. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:WilsonDisease",
+  "text": "Wilson Disease is an other monogenic disorder. It is caused by mutations in the ATP7B gene. The deficient enzyme or protein is Copper-Transporting ATPase 2. The metabolite that accumulates is Copper. Symptoms include hepatolenticular degeneration and kayser-fleischer rings. It is treated with penicillamine therapy. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "disease:XLinkedAdrenoleukodystrophy",
+  "text": "X-Linked Adrenoleukodystrophy is a peroxisomal disorder. It is caused by mutations in the ABCD1 gene. The deficient enzyme or protein is ALD Protein. The metabolite that accumulates is Very Long-Chain Fatty Acids. Symptoms include adrenal insufficiency and demyelination. It is treated with hematopoietic stem cell transplant. Inheritance is x-linked."
+ },
+ {
+  "id": "disease:ZellwegerSyndrome",
+  "text": "Zellweger Syndrome is a peroxisomal disorder. It is caused by mutations in the PEX1 gene. The deficient enzyme or protein is Peroxin-1. The metabolite that accumulates is Very Long-Chain Fatty Acids. Symptoms include craniofacial abnormalities and hypotonia. It is treated with supportive care. Inheritance is autosomal recessive."
+ },
+ {
+  "id": "gene:ABCD1",
+  "text": "The ABCD1 gene encodes ALD Protein. Mutations in ABCD1 cause X-Linked Adrenoleukodystrophy."
+ },
+ {
+  "id": "gene:ACADM",
+  "text": "The ACADM gene encodes Medium-Chain Acyl-CoA Dehydrogenase. Mutations in ACADM cause Medium-Chain Acyl-CoA Dehydrogenase Deficiency."
+ },
+ {
+  "id": "gene:ACADVL",
+  "text": "The ACADVL gene encodes Very Long-Chain Acyl-CoA Dehydrogenase. Mutations in ACADVL cause Very Long-Chain Acyl-CoA Dehydrogenase Deficiency."
+ },
+ {
+  "id": "gene:ACAT1",
+  "text": "The ACAT1 gene encodes Beta-Ketothiolase. Mutations in ACAT1 cause Beta-Ketothiolase Deficiency."
+ },
+ {
+  "id": "gene:AGL",
+  "text": "The AGL gene encodes Glycogen Debranching Enzyme. Mutations in AGL cause Glycogen Storage Disease Type III (Cori Disease)."
+ },
+ {
+  "id": "gene:ARG1",
+  "text": "The ARG1 gene encodes Arginase 1. Mutations in ARG1 cause Arginase Deficiency."
+ },
+ {
+  "id": "gene:ARSA",
+  "text": "The ARSA gene encodes Arylsulfatase A. Mutations in ARSA cause Metachromatic Leukodystrophy."
+ },
+ {
+  "id": "gene:ASL",
+  "text": "The ASL gene encodes Argininosuccinate Lyase. Mutations in ASL cause Argininosuccinic Aciduria."
+ },
+ {
+  "id": "gene:ASS1",
+  "text": "The ASS1 gene encodes Argininosuccinate Synthase. Mutations in ASS1 cause Citrullinemia Type I."
+ },
+ {
+  "id": "gene:ATM",
+  "text": "The ATM gene encodes ATM Kinase. Mutations in ATM cause Ataxia-Telangiectasia."
+ },
+ {
+  "id": "gene:ATP7A",
+  "text": "The ATP7A gene encodes Copper-Transporting ATPase 1. Mutations in ATP7A cause Menkes Disease."
+ },
+ {
+  "id": "gene:ATP7B",
+  "text": "The ATP7B gene encodes Copper-Transporting ATPase 2. Mutations in ATP7B cause Wilson Disease."
+ },
+ {
+  "id": "gene:BCKDHA",
+  "text": "The BCKDHA gene encodes Branched-Chain Alpha-Ketoacid Dehydrogenase. Mutations in BCKDHA cause Maple Syrup Urine Disease."
+ },
+ {
+  "id": "gene:BTD",
+  "text": "The BTD gene encodes Biotinidase. Mutations in BTD cause Biotinidase Deficiency."
+ },
+ {
+  "id": "gene:CBS",
+  "text": "The CBS gene encodes Cystathionine Beta-Synthase. Mutations in CBS cause Homocystinuria."
+ },
+ {
+  "id": "gene:CFTR",
+  "text": "The CFTR gene encodes Cystic Fibrosis Transmembrane Conductance Regulator. Mutations in CFTR cause Cystic Fibrosis."
+ },
+ {
+  "id": "gene:CPS1",
+  "text": "The CPS1 gene encodes Carbamoyl Phosphate Synthetase I. Mutations in CPS1 cause Carbamoyl Phosphate Synthetase I Deficiency."
+ },
+ {
+  "id": "gene:CPT2",
+  "text": "The CPT2 gene encodes Carnitine Palmitoyltransferase II. Mutations in CPT2 cause Carnitine Palmitoyltransferase II Deficiency."
+ },
+ {
+  "id": "gene:FAH",
+  "text": "The FAH gene encodes Fumarylacetoacetase. Mutations in FAH cause Tyrosinemia Type I."
+ },
+ {
+  "id": "gene:FUCA1",
+  "text": "The FUCA1 gene encodes Alpha-L-Fucosidase. Mutations in FUCA1 cause Fucosidosis."
+ },
+ {
+  "id": "gene:G6PC",
+  "text": "The G6PC gene encodes Glucose-6-Phosphatase. Mutations in G6PC cause Glycogen Storage Disease Type I (Von Gierke Disease)."
+ },
+ {
+  "id": "gene:GAA",
+  "text": "The GAA gene encodes Acid Alpha-Glucosidase. Mutations in GAA cause Pompe Disease."
+ },
+ {
+  "id": "gene:GALC",
+  "text": "The GALC gene encodes Galactocerebrosidase. Mutations in GALC cause Krabbe Disease."
+ },
+ {
+  "id": "gene:GBA",
+  "text": "The GBA gene encodes Beta-Glucocerebrosidase. Mutations in GBA cause Gaucher Disease."
+ },
+ {
+  "id": "gene:GCDH",
+  "text": "The GCDH gene encodes Glutaryl-CoA Dehydrogenase. Mutations in GCDH cause Glutaric Acidemia Type I."
+ },
+ {
+  "id": "gene:GLA",
+  "text": "The GLA gene encodes Alpha-Galactosidase A. Mutations in GLA cause Fabry Disease."
+ },
+ {
+  "id": "gene:GLDC",
+  "text": "The GLDC gene encodes Glycine Decarboxylase. Mutations in GLDC cause Nonketotic Hyperglycinemia."
+ },
+ {
+  "id": "gene:HADHA",
+  "text": "The HADHA gene encodes Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase. Mutations in HADHA cause Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency."
+ },
+ {
+  "id": "gene:HEXA",
+  "text": "The HEXA gene encodes Hexosaminidase A. Mutations in HEXA cause Tay-Sachs Disease."
+ },
+ {
+  "id": "gene:HFE",
+  "text": "The HFE gene encodes HFE Protein. Mutations in HFE cause Hereditary Hemochromatosis."
+ },
+ {
+  "id": "gene:HGD",
+  "text": "The HGD gene encodes Homogentisate 1,2-Dioxygenase. Mutations in HGD cause Alkaptonuria."
+ },
+ {
+  "id": "gene:HLCS",
+  "text": "The HLCS gene encodes Holocarboxylase Synthetase. Mutations in HLCS cause Holocarboxylase Synthetase Deficiency."
+ },
+ {
+  "id": "gene:HPRT1",
+  "text": "The HPRT1 gene encodes Hypoxanthine-Guanine Phosphoribosyltransferase. Mutations in HPRT1 cause Lesch-Nyhan Syndrome."
+ },
+ {
+  "id": "gene:IDS",
+  "text": "The IDS gene encodes Iduronate-2-Sulfatase. Mutations in IDS cause Mucopolysaccharidosis Type II (Hunter Syndrome)."
+ },
+ {
+  "id": "gene:IDUA",
+  "text": "The IDUA gene encodes Alpha-L-Iduronidase. Mutations in IDUA cause Mucopolysaccharidosis Type I (Hurler Syndrome)."
+ },
+ {
+  "id": "gene:IVD",
+  "text": "The IVD gene encodes Isovaleryl-CoA Dehydrogenase. Mutations in IVD cause Isovaleric Acidemia."
+ },
+ {
+  "id": "gene:LDLR",
+  "text": "The LDLR gene encodes LDL Receptor. Mutations in LDLR cause Familial Hypercholesterolemia."
+ },
+ {
+  "id": "gene:MCCC1",
+  "text": "The MCCC1 gene encodes 3-Methylcrotonyl-CoA Carboxylase. Mutations in MCCC1 cause 3-Methylcrotonyl-CoA Carboxylase Deficiency."
+ },
+ {
+  "id": "gene:MLYCD",
+  "text": "The MLYCD gene encodes Malonyl-CoA Decarboxylase. Mutations in MLYCD cause Malonic Aciduria."
+ },
+ {
+  "id": "gene:MUT",
+  "text": "The MUT gene encodes Methylmalonyl-CoA Mutase. Mutations in MUT cause Methylmalonic Acidemia."
+ },
+ {
+  "id": "gene:NAGS",
+  "text": "The NAGS gene encodes N-Acetylglutamate Synthase. Mutations in NAGS cause N-Acetylglutamate Synthase Deficiency."
+ },
+ {
+  "id": "gene:OTC",
+  "text": "The OTC gene encodes Ornithine Transcarbamylase. Mutations in OTC cause Ornithine Transcarbamylase Deficiency."
+ },
+ {
+  "id": "gene:PAH",
+  "text": "The PAH gene encodes Phenylalanine Hydroxylase. Mutations in PAH cause Phenylketonuria."
+ },
+ {
+  "id": "gene:PCCA",
+  "text": "The PCCA gene encodes Propionyl-CoA Carboxylase. Mutations in PCCA cause Propionic Acidemia."
+ },
+ {
+  "id": "gene:PEX1",
+  "text": "The PEX1 gene encodes Peroxin-1. Mutations in PEX1 cause Zellweger Syndrome."
+ },
+ {
+  "id": "gene:PHYH",
+  "text": "The PHYH gene encodes Phytanoyl-CoA Hydroxylase. Mutations in PHYH cause Refsum Disease."
+ },
+ {
+  "id": "gene:PYGM",
+  "text": "The PYGM gene encodes Myophosphorylase. Mutations in PYGM cause Glycogen Storage Disease Type V (McArdle Disease)."
+ },
+ {
+  "id": "gene:SLC22A5",
+  "text": "The SLC22A5 gene encodes OCTN2 Carnitine Transporter. Mutations in SLC22A5 cause Primary Carnitine Deficiency."
+ },
+ {
+  "id": "gene:SLC6A19",
+  "text": "The SLC6A19 gene encodes Neutral Amino Acid Transporter B(0)AT1. Mutations in SLC6A19 cause Hartnup Disease."
+ },
+ {
+  "id": "gene:SMPD1",
+  "text": "The SMPD1 gene encodes Acid Sphingomyelinase. Mutations in SMPD1 cause Niemann-Pick Disease Type A."
+ },
+ {
+  "id": "enzyme:ALDProtein",
+  "text": "ALD Protein is encoded by the ABCD1 gene. Deficiency of ALD Protein causes X-Linked Adrenoleukodystrophy. ALD Protein has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:ATMKinase",
+  "text": "ATM Kinase is encoded by the ATM gene. Deficiency of ATM Kinase causes Ataxia-Telangiectasia. ATM Kinase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:AcidAlphaGlucosidase",
+  "text": "Acid Alpha-Glucosidase is encoded by the GAA gene. Deficiency of Acid Alpha-Glucosidase causes Pompe Disease. Acid Alpha-Glucosidase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:AcidSphingomyelinase",
+  "text": "Acid Sphingomyelinase is encoded by the SMPD1 gene. Deficiency of Acid Sphingomyelinase causes Niemann-Pick Disease Type A. Acid Sphingomyelinase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:AlphaGalactosidaseA",
+  "text": "Alpha-Galactosidase A is encoded by the GLA gene. Deficiency of Alpha-Galactosidase A causes Fabry Disease. Alpha-Galactosidase A has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:AlphaLFucosidase",
+  "text": "Alpha-L-Fucosidase is encoded by the FUCA1 gene. Deficiency of Alpha-L-Fucosidase causes Fucosidosis. Alpha-L-Fucosidase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:AlphaLIduronidase",
+  "text": "Alpha-L-Iduronidase is encoded by the IDUA gene. Deficiency of Alpha-L-Iduronidase causes Mucopolysaccharidosis Type I (Hurler Syndrome). Alpha-L-Iduronidase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:Arginase1",
+  "text": "Arginase 1 is encoded by the ARG1 gene. Deficiency of Arginase 1 causes Arginase Deficiency. Arginase 1 has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:ArgininosuccinateLyase",
+  "text": "Argininosuccinate Lyase is encoded by the ASL gene. Deficiency of Argininosuccinate Lyase causes Argininosuccinic Aciduria. Argininosuccinate Lyase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:ArgininosuccinateSynthase",
+  "text": "Argininosuccinate Synthase is encoded by the ASS1 gene. Deficiency of Argininosuccinate Synthase causes Citrullinemia Type I. Argininosuccinate Synthase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:ArylsulfataseA",
+  "text": "Arylsulfatase A is encoded by the ARSA gene. Deficiency of Arylsulfatase A causes Metachromatic Leukodystrophy. Arylsulfatase A has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:BetaKetothiolase",
+  "text": "Beta-Ketothiolase is encoded by the ACAT1 gene. Deficiency of Beta-Ketothiolase causes Beta-Ketothiolase Deficiency. Beta-Ketothiolase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:Biotinidase",
+  "text": "Biotinidase is encoded by the BTD gene. Deficiency of Biotinidase causes Biotinidase Deficiency. Biotinidase requires the cofactor Biotin."
+ },
+ {
+  "id": "enzyme:BranchedChainAlphaKetoacidDehydrogenase",
+  "text": "Branched-Chain Alpha-Ketoacid Dehydrogenase is encoded by the BCKDHA gene. Deficiency of Branched-Chain Alpha-Ketoacid Dehydrogenase causes Maple Syrup Urine Disease. Branched-Chain Alpha-Ketoacid Dehydrogenase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:CarbamoylPhosphateSynthetaseI",
+  "text": "Carbamoyl Phosphate Synthetase I is encoded by the CPS1 gene. Deficiency of Carbamoyl Phosphate Synthetase I causes Carbamoyl Phosphate Synthetase I Deficiency. Carbamoyl Phosphate Synthetase I has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:CarnitinePalmitoyltransferase2",
+  "text": "Carnitine Palmitoyltransferase II is encoded by the CPT2 gene. Deficiency of Carnitine Palmitoyltransferase II causes Carnitine Palmitoyltransferase II Deficiency. Carnitine Palmitoyltransferase II has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:CopperTransportingATPase1",
+  "text": "Copper-Transporting ATPase 1 is encoded by the ATP7A gene. Deficiency of Copper-Transporting ATPase 1 causes Menkes Disease. Copper-Transporting ATPase 1 has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:CopperTransportingATPase2",
+  "text": "Copper-Transporting ATPase 2 is encoded by the ATP7B gene. Deficiency of Copper-Transporting ATPase 2 causes Wilson Disease. Copper-Transporting ATPase 2 has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:CystathionineBetaSynthase",
+  "text": "Cystathionine Beta-Synthase is encoded by the CBS gene. Deficiency of Cystathionine Beta-Synthase causes Homocystinuria. Cystathionine Beta-Synthase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:CysticFibrosisTransmembraneConductanceRegulator",
+  "text": "Cystic Fibrosis Transmembrane Conductance Regulator is encoded by the CFTR gene. Deficiency of Cystic Fibrosis Transmembrane Conductance Regulator causes Cystic Fibrosis. Cystic Fibrosis Transmembrane Conductance Regulator has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:Fumarylacetoacetase",
+  "text": "Fumarylacetoacetase is encoded by the FAH gene. Deficiency of Fumarylacetoacetase causes Tyrosinemia Type I. Fumarylacetoacetase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:Galactocerebrosidase",
+  "text": "Galactocerebrosidase is encoded by the GALC gene. Deficiency of Galactocerebrosidase causes Krabbe Disease. Galactocerebrosidase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:GlucocerebrosidaseBeta",
+  "text": "Beta-Glucocerebrosidase is encoded by the GBA gene. Deficiency of Beta-Glucocerebrosidase causes Gaucher Disease. Beta-Glucocerebrosidase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:GlucoseSixPhosphatase",
+  "text": "Glucose-6-Phosphatase is encoded by the G6PC gene. Deficiency of Glucose-6-Phosphatase causes Glycogen Storage Disease Type I (Von Gierke Disease). Glucose-6-Phosphatase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:GlutarylCoADehydrogenase",
+  "text": "Glutaryl-CoA Dehydrogenase is encoded by the GCDH gene. Deficiency of Glutaryl-CoA Dehydrogenase causes Glutaric Acidemia Type I. Glutaryl-CoA Dehydrogenase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:GlycineDecarboxylase",
+  "text": "Glycine Decarboxylase is encoded by the GLDC gene. Deficiency of Glycine Decarboxylase causes Nonketotic Hyperglycinemia. Glycine Decarboxylase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:GlycogenDebranchingEnzyme",
+  "text": "Glycogen Debranching Enzyme is encoded by the AGL gene. Deficiency of Glycogen Debranching Enzyme causes Glycogen Storage Disease Type III (Cori Disease). Glycogen Debranching Enzyme has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:HFEProtein",
+  "text": "HFE Protein is encoded by the HFE gene. Deficiency of HFE Protein causes Hereditary Hemochromatosis. HFE Protein has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:HexosaminidaseA",
+  "text": "Hexosaminidase A is encoded by the HEXA gene. Deficiency of Hexosaminidase A causes Tay-Sachs Disease. Hexosaminidase A has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:HolocarboxylaseSynthetase",
+  "text": "Holocarboxylase Synthetase is encoded by the HLCS gene. Deficiency of Holocarboxylase Synthetase causes Holocarboxylase Synthetase Deficiency. Holocarboxylase Synthetase requires the cofactor Biotin."
+ },
+ {
+  "id": "enzyme:HomogentisateDioxygenase",
+  "text": "Homogentisate 1,2-Dioxygenase is encoded by the HGD gene. Deficiency of Homogentisate 1,2-Dioxygenase causes Alkaptonuria. Homogentisate 1,2-Dioxygenase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:HypoxanthineGuaninePhosphoribosyltransferase",
+  "text": "Hypoxanthine-Guanine Phosphoribosyltransferase is encoded by the HPRT1 gene. Deficiency of Hypoxanthine-Guanine Phosphoribosyltransferase causes Lesch-Nyhan Syndrome. Hypoxanthine-Guanine Phosphoribosyltransferase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:IduronateTwoSulfatase",
+  "text": "Iduronate-2-Sulfatase is encoded by the IDS gene. Deficiency of Iduronate-2-Sulfatase causes Mucopolysaccharidosis Type II (Hunter Syndrome). Iduronate-2-Sulfatase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:IsovalerylCoADehydrogenase",
+  "text": "Isovaleryl-CoA Dehydrogenase is encoded by the IVD gene. Deficiency of Isovaleryl-CoA Dehydrogenase causes Isovaleric Acidemia. Isovaleryl-CoA Dehydrogenase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:LDLReceptor",
+  "text": "LDL Receptor is encoded by the LDLR gene. Deficiency of LDL Receptor causes Familial Hypercholesterolemia. LDL Receptor has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:LongChainThreeHydroxyacylCoADehydrogenase",
+  "text": "Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase is encoded by the HADHA gene. Deficiency of Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase causes Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency. Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:MalonylCoADecarboxylase",
+  "text": "Malonyl-CoA Decarboxylase is encoded by the MLYCD gene. Deficiency of Malonyl-CoA Decarboxylase causes Malonic Aciduria. Malonyl-CoA Decarboxylase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:MediumChainAcylCoADehydrogenase",
+  "text": "Medium-Chain Acyl-CoA Dehydrogenase is encoded by the ACADM gene. Deficiency of Medium-Chain Acyl-CoA Dehydrogenase causes Medium-Chain Acyl-CoA Dehydrogenase Deficiency. Medium-Chain Acyl-CoA Dehydrogenase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:MethylmalonylCoAMutase",
+  "text": "Methylmalonyl-CoA Mutase is encoded by the MUT gene. Deficiency of Methylmalonyl-CoA Mutase causes Methylmalonic Acidemia. Methylmalonyl-CoA Mutase requires the cofactor Vitamin B12."
+ },
+ {
+  "id": "enzyme:Myophosphorylase",
+  "text": "Myophosphorylase is encoded by the PYGM gene. Deficiency of Myophosphorylase causes Glycogen Storage Disease Type V (McArdle Disease). Myophosphorylase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:NAcetylglutamateSynthase",
+  "text": "N-Acetylglutamate Synthase is encoded by the NAGS gene. Deficiency of N-Acetylglutamate Synthase causes N-Acetylglutamate Synthase Deficiency. N-Acetylglutamate Synthase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:NeutralAminoAcidTransporterB0AT1",
+  "text": "Neutral Amino Acid Transporter B(0)AT1 is encoded by the SLC6A19 gene. Deficiency of Neutral Amino Acid Transporter B(0)AT1 causes Hartnup Disease. Neutral Amino Acid Transporter B(0)AT1 has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:OCTN2CarnitineTransporter",
+  "text": "OCTN2 Carnitine Transporter is encoded by the SLC22A5 gene. Deficiency of OCTN2 Carnitine Transporter causes Primary Carnitine Deficiency. OCTN2 Carnitine Transporter has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:OrnithineTranscarbamylase",
+  "text": "Ornithine Transcarbamylase is encoded by the OTC gene. Deficiency of Ornithine Transcarbamylase causes Ornithine Transcarbamylase Deficiency. Ornithine Transcarbamylase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:Peroxin1",
+  "text": "Peroxin-1 is encoded by the PEX1 gene. Deficiency of Peroxin-1 causes Zellweger Syndrome. Peroxin-1 has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:PhenylalanineHydroxylase",
+  "text": "Phenylalanine Hydroxylase is encoded by the PAH gene. Deficiency of Phenylalanine Hydroxylase causes Phenylketonuria. Phenylalanine Hydroxylase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:PhytanoylCoAHydroxylase",
+  "text": "Phytanoyl-CoA Hydroxylase is encoded by the PHYH gene. Deficiency of Phytanoyl-CoA Hydroxylase causes Refsum Disease. Phytanoyl-CoA Hydroxylase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:PropionylCoACarboxylase",
+  "text": "Propionyl-CoA Carboxylase is encoded by the PCCA gene. Deficiency of Propionyl-CoA Carboxylase causes Propionic Acidemia. Propionyl-CoA Carboxylase requires the cofactor Biotin."
+ },
+ {
+  "id": "enzyme:ThreeMethylcrotonylCoACarboxylase",
+  "text": "3-Methylcrotonyl-CoA Carboxylase is encoded by the MCCC1 gene. Deficiency of 3-Methylcrotonyl-CoA Carboxylase causes 3-Methylcrotonyl-CoA Carboxylase Deficiency. 3-Methylcrotonyl-CoA Carboxylase has no cofactor recorded."
+ },
+ {
+  "id": "enzyme:VeryLongChainAcylCoADehydrogenase",
+  "text": "Very Long-Chain Acyl-CoA Dehydrogenase is encoded by the ACADVL gene. Deficiency of Very Long-Chain Acyl-CoA Dehydrogenase causes Very Long-Chain Acyl-CoA Dehydrogenase Deficiency. Very Long-Chain Acyl-CoA Dehydrogenase has no cofactor recorded."
+ },
+ {
+  "id": "metabolite:Ammonia",
+  "text": "Ammonia accumulates in Carbamoyl Phosphate Synthetase I Deficiency and N-Acetylglutamate Synthase Deficiency."
+ },
+ {
+  "id": "metabolite:Arginine",
+  "text": "Arginine accumulates in Arginase Deficiency."
+ },
+ {
+  "id": "metabolite:ArgininosuccinicAcid",
+  "text": "Argininosuccinic Acid accumulates in Argininosuccinic Aciduria."
+ },
+ {
+  "id": "metabolite:BiotinDeficiencyMetabolite",
+  "text": "Biotin (Deficient) accumulates in Biotinidase Deficiency."
+ },
+ {
+  "id": "metabolite:CarnitineDeficiencyMetabolite",
+  "text": "Free Carnitine (Deficient) accumulates in Primary Carnitine Deficiency."
+ },
+ {
+  "id": "metabolite:ChlorideIonTransportDefectMetabolite",
+  "text": "Chloride Ion Transport (Defective) accumulates in Cystic Fibrosis."
+ },
+ {
+  "id": "metabolite:Citrulline",
+  "text": "Citrulline accumulates in Citrullinemia Type I."
+ },
+ {
+  "id": "metabolite:Copper",
+  "text": "Copper accumulates in Wilson Disease."
+ },
+ {
+  "id": "metabolite:CopperDeficiencyMetabolite",
+  "text": "Copper (Deficient) accumulates in Menkes Disease."
+ },
+ {
+  "id": "metabolite:DNADamageResponseImpairedMetabolite",
+  "text": "Impaired DNA-Damage Response Marker accumulates in Ataxia-Telangiectasia."
+ },
+ {
+  "id": "metabolite:DermatanSulfate",
+  "text": "Dermatan Sulfate accumulates in Mucopolysaccharidosis Type I (Hurler Syndrome)."
+ },
+ {
+  "id": "metabolite:FucoseContainingGlycolipids",
+  "text": "Fucose-Containing Glycolipids accumulates in Fucosidosis."
+ },
+ {
+  "id": "metabolite:GM2Ganglioside",
+  "text": "GM2 Ganglioside accumulates in Tay-Sachs Disease."
+ },
+ {
+  "id": "metabolite:Globotriaosylceramide",
+  "text": "Globotriaosylceramide accumulates in Fabry Disease."
+ },
+ {
+  "id": "metabolite:Glucocerebroside",
+  "text": "Glucocerebroside accumulates in Gaucher Disease."
+ },
+ {
+  "id": "metabolite:GlutaricAcid",
+  "text": "Glutaric Acid accumulates in Glutaric Acidemia Type I."
+ },
+ {
+  "id": "metabolite:Glycine",
+  "text": "Glycine accumulates in Nonketotic Hyperglycinemia."
+ },
+ {
+  "id": "metabolite:Glycogen",
+  "text": "Glycogen accumulates in Glycogen Storage Disease Type I (Von Gierke Disease), Glycogen Storage Disease Type V (McArdle Disease) and Pompe Disease."
+ },
+ {
+  "id": "metabolite:HeparanSulfate",
+  "text": "Heparan Sulfate accumulates in Mucopolysaccharidosis Type II (Hunter Syndrome)."
+ },
+ {
+  "id": "metabolite:Homocysteine",
+  "text": "Homocysteine accumulates in Homocystinuria."
+ },
+ {
+  "id": "metabolite:HomogentisicAcid",
+  "text": "Homogentisic Acid accumulates in Alkaptonuria."
+ },
+ {
+  "id": "metabolite:Iron",
+  "text": "Iron accumulates in Hereditary Hemochromatosis."
+ },
+ {
+  "id": "metabolite:IsovalericAcid",
+  "text": "Isovaleric Acid accumulates in Isovaleric Acidemia."
+ },
+ {
+  "id": "metabolite:LDLCholesterol",
+  "text": "LDL Cholesterol accumulates in Familial Hypercholesterolemia."
+ },
+ {
+  "id": "metabolite:Leucine",
+  "text": "Leucine accumulates in Maple Syrup Urine Disease."
+ },
+ {
+  "id": "metabolite:LimitDextrin",
+  "text": "Limit Dextrin accumulates in Glycogen Storage Disease Type III (Cori Disease)."
+ },
+ {
+  "id": "metabolite:LongChainAcylcarnitines",
+  "text": "Long-Chain Acylcarnitines accumulates in Carnitine Palmitoyltransferase II Deficiency."
+ },
+ {
+  "id": "metabolite:LongChainFattyAcids",
+  "text": "Long-Chain Fatty Acids accumulates in Very Long-Chain Acyl-CoA Dehydrogenase Deficiency."
+ },
+ {
+  "id": "metabolite:MalonicAcid",
+  "text": "Malonic Acid accumulates in Malonic Aciduria."
+ },
+ {
+  "id": "metabolite:MediumChainFattyAcids",
+  "text": "Medium-Chain Fatty Acids accumulates in Medium-Chain Acyl-CoA Dehydrogenase Deficiency."
+ },
+ {
+  "id": "metabolite:MethylmalonicAcid",
+  "text": "Methylmalonic Acid accumulates in Methylmalonic Acidemia."
+ },
+ {
+  "id": "metabolite:OrganicAcidsMixed",
+  "text": "Mixed Organic Acids accumulates in Holocarboxylase Synthetase Deficiency."
+ },
+ {
+  "id": "metabolite:OroticAcid",
+  "text": "Orotic Acid accumulates in Ornithine Transcarbamylase Deficiency."
+ },
+ {
+  "id": "metabolite:Phenylalanine",
+  "text": "Phenylalanine accumulates in Phenylketonuria."
+ },
+ {
+  "id": "metabolite:PhytanicAcid",
+  "text": "Phytanic Acid accumulates in Refsum Disease."
+ },
+ {
+  "id": "metabolite:PropionicAcid",
+  "text": "Propionic Acid accumulates in Propionic Acidemia."
+ },
+ {
+  "id": "metabolite:Psychosine",
+  "text": "Psychosine accumulates in Krabbe Disease."
+ },
+ {
+  "id": "metabolite:Sphingomyelin",
+  "text": "Sphingomyelin accumulates in Niemann-Pick Disease Type A."
+ },
+ {
+  "id": "metabolite:Succinylacetone",
+  "text": "Succinylacetone accumulates in Tyrosinemia Type I."
+ },
+ {
+  "id": "metabolite:Sulfatide",
+  "text": "Sulfatide accumulates in Metachromatic Leukodystrophy."
+ },
+ {
+  "id": "metabolite:ThreeHydroxyFattyAcids",
+  "text": "3-Hydroxy Fatty Acids accumulates in Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency."
+ },
+ {
+  "id": "metabolite:ThreeMethylcrotonylglycine",
+  "text": "3-Methylcrotonylglycine accumulates in 3-Methylcrotonyl-CoA Carboxylase Deficiency."
+ },
+ {
+  "id": "metabolite:Tryptophan",
+  "text": "Tryptophan accumulates in Hartnup Disease."
+ },
+ {
+  "id": "metabolite:TwoMethylThreeHydroxybutyricAcid",
+  "text": "2-Methyl-3-Hydroxybutyric Acid accumulates in Beta-Ketothiolase Deficiency."
+ },
+ {
+  "id": "metabolite:UricAcid",
+  "text": "Uric Acid accumulates in Lesch-Nyhan Syndrome."
+ },
+ {
+  "id": "metabolite:VeryLongChainFattyAcids",
+  "text": "Very Long-Chain Fatty Acids accumulates in X-Linked Adrenoleukodystrophy and Zellweger Syndrome."
+ },
+ {
+  "id": "phenotype:AdrenalInsufficiency",
+  "text": "Adrenal Insufficiency affects the Endocrine System. Adrenal Insufficiency is a symptom of X-Linked Adrenoleukodystrophy."
+ },
+ {
+  "id": "phenotype:Alopecia",
+  "text": "Alopecia affects the Dermatologic System. Alopecia is a symptom of Biotinidase Deficiency."
+ },
+ {
+  "id": "phenotype:Angiokeratoma",
+  "text": "Angiokeratoma affects the Dermatologic System. Angiokeratoma is a symptom of Fabry Disease and Fucosidosis."
+ },
+ {
+  "id": "phenotype:Arthritis",
+  "text": "Arthritis affects the Skeletal System. Arthritis is a symptom of Alkaptonuria."
+ },
+ {
+  "id": "phenotype:BoneCrises",
+  "text": "Bone Crises affects the Skeletal System. Bone Crises is a symptom of Gaucher Disease."
+ },
+ {
+  "id": "phenotype:Cardiomyopathy",
+  "text": "Cardiomyopathy affects the Cardiovascular System. Cardiomyopathy is a symptom of Malonic Aciduria, Pompe Disease, Primary Carnitine Deficiency and Very Long-Chain Acyl-CoA Dehydrogenase Deficiency."
+ },
+ {
+  "id": "phenotype:CerebellarAtaxia",
+  "text": "Cerebellar Ataxia affects the Nervous System. Cerebellar Ataxia is a symptom of Ataxia-Telangiectasia and Hartnup Disease."
+ },
+ {
+  "id": "phenotype:CherryRedSpot",
+  "text": "Cherry-Red Spot affects the Ocular System. Cherry-Red Spot is a symptom of Tay-Sachs Disease."
+ },
+ {
+  "id": "phenotype:ChronicLungInfection",
+  "text": "Chronic Lung Infection affects the Respiratory System. Chronic Lung Infection is a symptom of Cystic Fibrosis."
+ },
+ {
+  "id": "phenotype:CoarseFacialFeatures",
+  "text": "Coarse Facial Features affects the Skeletal System. Coarse Facial Features is a symptom of Fucosidosis, Mucopolysaccharidosis Type I (Hurler Syndrome) and Mucopolysaccharidosis Type II (Hunter Syndrome)."
+ },
+ {
+  "id": "phenotype:Coma",
+  "text": "Coma affects the Nervous System. Coma is a symptom of Carbamoyl Phosphate Synthetase I Deficiency."
+ },
+ {
+  "id": "phenotype:CraniofacialAbnormalities",
+  "text": "Craniofacial Abnormalities affects the Skeletal System. Craniofacial Abnormalities is a symptom of Zellweger Syndrome."
+ },
+ {
+  "id": "phenotype:Demyelination",
+  "text": "Demyelination affects the Nervous System. Demyelination is a symptom of Krabbe Disease, Metachromatic Leukodystrophy and X-Linked Adrenoleukodystrophy."
+ },
+ {
+  "id": "phenotype:DevelopmentalDelay",
+  "text": "Developmental Delay affects the Nervous System. Developmental Delay is a symptom of Malonic Aciduria."
+ },
+ {
+  "id": "phenotype:Diabetes",
+  "text": "Diabetes Mellitus affects the Endocrine System. Diabetes Mellitus is a symptom of Hereditary Hemochromatosis."
+ },
+ {
+  "id": "phenotype:DystonicMovementDisorder",
+  "text": "Dystonic Movement Disorder affects the Nervous System. Dystonic Movement Disorder is a symptom of Glutaric Acidemia Type I."
+ },
+ {
+  "id": "phenotype:EarlyCoronaryArteryDisease",
+  "text": "Early Coronary Artery Disease affects the Cardiovascular System. Early Coronary Artery Disease is a symptom of Familial Hypercholesterolemia."
+ },
+ {
+  "id": "phenotype:Encephalopathy",
+  "text": "Encephalopathy affects the Nervous System. Encephalopathy is a symptom of Maple Syrup Urine Disease and Nonketotic Hyperglycinemia."
+ },
+ {
+  "id": "phenotype:ExerciseIntolerance",
+  "text": "Exercise Intolerance affects the Muscular System. Exercise Intolerance is a symptom of Glycogen Storage Disease Type V (McArdle Disease)."
+ },
+ {
+  "id": "phenotype:FailureToThrive",
+  "text": "Failure to Thrive affects the Metabolic System. Failure to Thrive is a symptom of Methylmalonic Acidemia."
+ },
+ {
+  "id": "phenotype:GaitDisturbance",
+  "text": "Gait Disturbance affects the Nervous System. Gait Disturbance is a symptom of Metachromatic Leukodystrophy."
+ },
+ {
+  "id": "phenotype:Gout",
+  "text": "Gout affects the Skeletal System. Gout is a symptom of Lesch-Nyhan Syndrome."
+ },
+ {
+  "id": "phenotype:HairAbnormalities",
+  "text": "Hair Abnormalities affects the Dermatologic System. Hair Abnormalities is a symptom of Menkes Disease."
+ },
+ {
+  "id": "phenotype:HepatolenticularDegeneration",
+  "text": "Hepatolenticular Degeneration affects the Hepatic System. Hepatolenticular Degeneration is a symptom of Wilson Disease."
+ },
+ {
+  "id": "phenotype:Hepatomegaly",
+  "text": "Hepatomegaly affects the Hepatic System. Hepatomegaly is a symptom of Glycogen Storage Disease Type III (Cori Disease) and Glycogen Storage Disease Type I (Von Gierke Disease)."
+ },
+ {
+  "id": "phenotype:Hepatosplenomegaly",
+  "text": "Hepatosplenomegaly affects the Hepatic System. Hepatosplenomegaly is a symptom of Gaucher Disease, Mucopolysaccharidosis Type I (Hurler Syndrome) and Niemann-Pick Disease Type A."
+ },
+ {
+  "id": "phenotype:Hyperammonemia",
+  "text": "Hyperammonemia affects the Metabolic System. Hyperammonemia is a symptom of Argininosuccinic Aciduria, Carbamoyl Phosphate Synthetase I Deficiency, Citrullinemia Type I, N-Acetylglutamate Synthase Deficiency, Ornithine Transcarbamylase Deficiency and Propionic Acidemia."
+ },
+ {
+  "id": "phenotype:Hypoglycemia",
+  "text": "Hypoglycemia affects the Metabolic System. Hypoglycemia is a symptom of Glycogen Storage Disease Type III (Cori Disease), Glycogen Storage Disease Type I (Von Gierke Disease) and Very Long-Chain Acyl-CoA Dehydrogenase Deficiency."
+ },
+ {
+  "id": "phenotype:HypoketoticHypoglycemia",
+  "text": "Hypoketotic Hypoglycemia affects the Metabolic System. Hypoketotic Hypoglycemia is a symptom of Medium-Chain Acyl-CoA Dehydrogenase Deficiency."
+ },
+ {
+  "id": "phenotype:Hypotonia",
+  "text": "Hypotonia affects the Muscular System. Hypotonia is a symptom of Zellweger Syndrome."
+ },
+ {
+  "id": "phenotype:HypotoniaMild",
+  "text": "Mild Hypotonia affects the Muscular System. Mild Hypotonia is a symptom of 3-Methylcrotonyl-CoA Carboxylase Deficiency."
+ },
+ {
+  "id": "phenotype:IntellectualDisability",
+  "text": "Intellectual Disability affects the Nervous System. Intellectual Disability is a symptom of Phenylketonuria."
+ },
+ {
+  "id": "phenotype:Irritability",
+  "text": "Irritability affects the Nervous System. Irritability is a symptom of Krabbe Disease."
+ },
+ {
+  "id": "phenotype:JointStiffness",
+  "text": "Joint Stiffness affects the Skeletal System. Joint Stiffness is a symptom of Mucopolysaccharidosis Type II (Hunter Syndrome)."
+ },
+ {
+  "id": "phenotype:KayserFleischerRings",
+  "text": "Kayser-Fleischer Rings affects the Ocular System. Kayser-Fleischer Rings is a symptom of Wilson Disease."
+ },
+ {
+  "id": "phenotype:KetoacidosisEpisodes",
+  "text": "Episodic Ketoacidosis affects the Metabolic System. Episodic Ketoacidosis is a symptom of Beta-Ketothiolase Deficiency."
+ },
+ {
+  "id": "phenotype:LensDislocation",
+  "text": "Lens Dislocation affects the Ocular System. Lens Dislocation is a symptom of Homocystinuria."
+ },
+ {
+  "id": "phenotype:Lethargy",
+  "text": "Lethargy affects the Nervous System. Lethargy is a symptom of Citrullinemia Type I, Medium-Chain Acyl-CoA Dehydrogenase Deficiency and Propionic Acidemia."
+ },
+ {
+  "id": "phenotype:LiverCirrhosis",
+  "text": "Liver Cirrhosis affects the Hepatic System. Liver Cirrhosis is a symptom of Hereditary Hemochromatosis."
+ },
+ {
+  "id": "phenotype:LiverFailure",
+  "text": "Liver Failure affects the Hepatic System. Liver Failure is a symptom of Tyrosinemia Type I."
+ },
+ {
+  "id": "phenotype:Macrocephaly",
+  "text": "Macrocephaly affects the Nervous System. Macrocephaly is a symptom of Glutaric Acidemia Type I."
+ },
+ {
+  "id": "phenotype:MarfanoidHabitus",
+  "text": "Marfanoid Habitus affects the Skeletal System. Marfanoid Habitus is a symptom of Homocystinuria."
+ },
+ {
+  "id": "phenotype:MetabolicAcidosis",
+  "text": "Metabolic Acidosis affects the Metabolic System. Metabolic Acidosis is a symptom of Methylmalonic Acidemia."
+ },
+ {
+  "id": "phenotype:Microcephaly",
+  "text": "Microcephaly affects the Nervous System. Microcephaly is a symptom of Phenylketonuria."
+ },
+ {
+  "id": "phenotype:MuscleWeakness",
+  "text": "Muscle Weakness affects the Muscular System. Muscle Weakness is a symptom of Pompe Disease and Primary Carnitine Deficiency."
+ },
+ {
+  "id": "phenotype:Myalgia",
+  "text": "Myalgia affects the Muscular System. Myalgia is a symptom of Glycogen Storage Disease Type V (McArdle Disease)."
+ },
+ {
+  "id": "phenotype:MyalgiaExerciseInduced",
+  "text": "Exercise-Induced Myalgia affects the Muscular System. Exercise-Induced Myalgia is a symptom of Carnitine Palmitoyltransferase II Deficiency."
+ },
+ {
+  "id": "phenotype:NeurodegenerationProgressive",
+  "text": "Progressive Neurodegeneration affects the Nervous System. Progressive Neurodegeneration is a symptom of Menkes Disease, Niemann-Pick Disease Type A and Tay-Sachs Disease."
+ },
+ {
+  "id": "phenotype:NeuropathicPain",
+  "text": "Neuropathic Pain affects the Nervous System. Neuropathic Pain is a symptom of Fabry Disease."
+ },
+ {
+  "id": "phenotype:Ochronosis",
+  "text": "Ochronosis affects the Skeletal System. Ochronosis is a symptom of Alkaptonuria."
+ },
+ {
+  "id": "phenotype:PancreaticInsufficiency",
+  "text": "Pancreatic Insufficiency affects the Gastrointestinal System. Pancreatic Insufficiency is a symptom of Cystic Fibrosis."
+ },
+ {
+  "id": "phenotype:PellagraLikeRash",
+  "text": "Pellagra-Like Rash affects the Dermatologic System. Pellagra-Like Rash is a symptom of Hartnup Disease."
+ },
+ {
+  "id": "phenotype:PeripheralNeuropathy",
+  "text": "Peripheral Neuropathy affects the Nervous System. Peripheral Neuropathy is a symptom of Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency and Refsum Disease."
+ },
+ {
+  "id": "phenotype:ProgressiveIntellectualDisability",
+  "text": "Progressive Intellectual Disability affects the Nervous System. Progressive Intellectual Disability is a symptom of Arginase Deficiency."
+ },
+ {
+  "id": "phenotype:RenalFailure",
+  "text": "Renal Failure affects the Renal System. Renal Failure is a symptom of Fabry Disease."
+ },
+ {
+  "id": "phenotype:RenalTubularDysfunction",
+  "text": "Renal Tubular Dysfunction affects the Renal System. Renal Tubular Dysfunction is a symptom of Tyrosinemia Type I."
+ },
+ {
+  "id": "phenotype:RetinitisPigmentosa",
+  "text": "Retinitis Pigmentosa affects the Ocular System. Retinitis Pigmentosa is a symptom of Refsum Disease."
+ },
+ {
+  "id": "phenotype:Retinopathy",
+  "text": "Retinopathy affects the Ocular System. Retinopathy is a symptom of Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency."
+ },
+ {
+  "id": "phenotype:Rhabdomyolysis",
+  "text": "Rhabdomyolysis affects the Muscular System. Rhabdomyolysis is a symptom of Carnitine Palmitoyltransferase II Deficiency."
+ },
+ {
+  "id": "phenotype:Seizures",
+  "text": "Seizures affects the Nervous System. Seizures is a symptom of Biotinidase Deficiency, Holocarboxylase Synthetase Deficiency and Nonketotic Hyperglycinemia."
+ },
+ {
+  "id": "phenotype:SelfInjuriousBehavior",
+  "text": "Self-Injurious Behavior affects the Nervous System. Self-Injurious Behavior is a symptom of Lesch-Nyhan Syndrome."
+ },
+ {
+  "id": "phenotype:SkinRash",
+  "text": "Skin Rash affects the Dermatologic System. Skin Rash is a symptom of Holocarboxylase Synthetase Deficiency."
+ },
+ {
+  "id": "phenotype:Spasticity",
+  "text": "Spasticity affects the Nervous System. Spasticity is a symptom of Arginase Deficiency."
+ },
+ {
+  "id": "phenotype:SweatyFeetOdor",
+  "text": "Sweaty Feet Odor affects the Metabolic System. Sweaty Feet Odor is a symptom of Isovaleric Acidemia."
+ },
+ {
+  "id": "phenotype:SweetSmellingUrine",
+  "text": "Sweet-Smelling Urine affects the Metabolic System. Sweet-Smelling Urine is a symptom of Maple Syrup Urine Disease."
+ },
+ {
+  "id": "phenotype:Telangiectasia",
+  "text": "Telangiectasia affects the Dermatologic System. Telangiectasia is a symptom of Ataxia-Telangiectasia."
+ },
+ {
+  "id": "phenotype:Thromboembolism",
+  "text": "Thromboembolism affects the Cardiovascular System. Thromboembolism is a symptom of Homocystinuria."
+ },
+ {
+  "id": "phenotype:Trichorrhexis",
+  "text": "Trichorrhexis Nodosa affects the Dermatologic System. Trichorrhexis Nodosa is a symptom of Argininosuccinic Aciduria."
+ },
+ {
+  "id": "phenotype:Vomiting",
+  "text": "Vomiting affects the Gastrointestinal System. Vomiting is a symptom of Isovaleric Acidemia and Ornithine Transcarbamylase Deficiency."
+ },
+ {
+  "id": "phenotype:Xanthomas",
+  "text": "Xanthomas affects the Dermatologic System. Xanthomas is a symptom of Familial Hypercholesterolemia."
+ },
+ {
+  "id": "treatment:AllopurinolTherapy",
+  "text": "Allopurinol Therapy is a treatment for Lesch-Nyhan Syndrome."
+ },
+ {
+  "id": "treatment:ArginineSupplementation",
+  "text": "Arginine Supplementation is a treatment for Argininosuccinic Aciduria."
+ },
+ {
+  "id": "treatment:AvoidanceOfFasting",
+  "text": "Avoidance of Fasting is a treatment for Medium-Chain Acyl-CoA Dehydrogenase Deficiency."
+ },
+ {
+  "id": "treatment:AvoidanceOfStrenuousExercise",
+  "text": "Avoidance of Strenuous Exercise is a treatment for Glycogen Storage Disease Type V (McArdle Disease)."
+ },
+ {
+  "id": "treatment:BiotinSupplementation",
+  "text": "Biotin Supplementation is a treatment for Biotinidase Deficiency and Holocarboxylase Synthetase Deficiency."
+ },
+ {
+  "id": "treatment:BranchedChainAminoAcidRestrictedDiet",
+  "text": "Branched-Chain Amino Acid Restricted Diet is a treatment for Maple Syrup Urine Disease."
+ },
+ {
+  "id": "treatment:CFTRModulatorTherapy",
+  "text": "CFTR Modulator Therapy is a treatment for Cystic Fibrosis."
+ },
+ {
+  "id": "treatment:CarglumicAcidTherapy",
+  "text": "Carglumic Acid Therapy is a treatment for N-Acetylglutamate Synthase Deficiency."
+ },
+ {
+  "id": "treatment:CarnitineSupplementation",
+  "text": "Carnitine Supplementation is a treatment for Primary Carnitine Deficiency and 3-Methylcrotonyl-CoA Carboxylase Deficiency."
+ },
+ {
+  "id": "treatment:CarnitineSupplementationWithLysineRestriction",
+  "text": "Carnitine Supplementation with Lysine Restriction is a treatment for Glutaric Acidemia Type I."
+ },
+ {
+  "id": "treatment:CopperHistidineInjections",
+  "text": "Copper Histidine Injections is a treatment for Menkes Disease."
+ },
+ {
+  "id": "treatment:CornstarchTherapy",
+  "text": "Uncooked Cornstarch Therapy is a treatment for Glycogen Storage Disease Type I (Von Gierke Disease)."
+ },
+ {
+  "id": "treatment:DietaryPhytanicAcidRestriction",
+  "text": "Dietary Phytanic Acid Restriction is a treatment for Refsum Disease."
+ },
+ {
+  "id": "treatment:EnzymeReplacementTherapy",
+  "text": "Enzyme Replacement Therapy is a treatment for Fabry Disease, Gaucher Disease, Mucopolysaccharidosis Type I (Hurler Syndrome), Mucopolysaccharidosis Type II (Hunter Syndrome) and Pompe Disease."
+ },
+ {
+  "id": "treatment:HematopoieticStemCellTransplant",
+  "text": "Hematopoietic Stem Cell Transplant is a treatment for Krabbe Disease, Metachromatic Leukodystrophy and X-Linked Adrenoleukodystrophy."
+ },
+ {
+  "id": "treatment:HighProteinDiet",
+  "text": "High-Protein Diet is a treatment for Glycogen Storage Disease Type III (Cori Disease)."
+ },
+ {
+  "id": "treatment:LeucineRestrictedDietWithGlycine",
+  "text": "Leucine-Restricted Diet with Glycine is a treatment for Isovaleric Acidemia."
+ },
+ {
+  "id": "treatment:LowFatDiet",
+  "text": "Low-Fat Diet is a treatment for Malonic Aciduria."
+ },
+ {
+  "id": "treatment:LowFatHighCarbohydrateDiet",
+  "text": "Low-Fat High-Carbohydrate Diet is a treatment for Carnitine Palmitoyltransferase II Deficiency."
+ },
+ {
+  "id": "treatment:LowPhenylalanineDiet",
+  "text": "Low-Phenylalanine Diet is a treatment for Phenylketonuria."
+ },
+ {
+  "id": "treatment:MCTOilDietaryTherapy",
+  "text": "MCT Oil Dietary Therapy is a treatment for Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency and Very Long-Chain Acyl-CoA Dehydrogenase Deficiency."
+ },
+ {
+  "id": "treatment:NicotinamideSupplementation",
+  "text": "Nicotinamide Supplementation is a treatment for Hartnup Disease."
+ },
+ {
+  "id": "treatment:NitisinoneTherapy",
+  "text": "Nitisinone Therapy is a treatment for Alkaptonuria and Tyrosinemia Type I."
+ },
+ {
+  "id": "treatment:PenicillamineTherapy",
+  "text": "Penicillamine Therapy is a treatment for Wilson Disease."
+ },
+ {
+  "id": "treatment:ProteinRestrictedDiet",
+  "text": "Protein-Restricted Diet is a treatment for Arginase Deficiency, Beta-Ketothiolase Deficiency, Carbamoyl Phosphate Synthetase I Deficiency, Citrullinemia Type I and Ornithine Transcarbamylase Deficiency."
+ },
+ {
+  "id": "treatment:ProteinRestrictedDietWithBiotin",
+  "text": "Protein-Restricted Diet with Biotin is a treatment for Propionic Acidemia."
+ },
+ {
+  "id": "treatment:SodiumBenzoateTherapy",
+  "text": "Sodium Benzoate Therapy is a treatment for Nonketotic Hyperglycinemia."
+ },
+ {
+  "id": "treatment:StatinTherapy",
+  "text": "Statin Therapy is a treatment for Familial Hypercholesterolemia."
+ },
+ {
+  "id": "treatment:SupportiveCare",
+  "text": "Supportive Care is a treatment for Ataxia-Telangiectasia, Fucosidosis, Niemann-Pick Disease Type A, Tay-Sachs Disease and Zellweger Syndrome."
+ },
+ {
+  "id": "treatment:TherapeuticPhlebotomy",
+  "text": "Therapeutic Phlebotomy is a treatment for Hereditary Hemochromatosis."
+ },
+ {
+  "id": "treatment:VitaminB12Supplementation",
+  "text": "Vitamin B12 Supplementation is a treatment for Methylmalonic Acidemia."
+ },
+ {
+  "id": "treatment:VitaminB6Supplementation",
+  "text": "Vitamin B6 Supplementation is a treatment for Homocystinuria."
+ },
+ {
+  "id": "cofactor:Biotin",
+  "text": "Biotin is a cofactor required by Biotinidase, Holocarboxylase Synthetase and Propionyl-CoA Carboxylase."
+ },
+ {
+  "id": "cofactor:VitaminB12",
+  "text": "Vitamin B12 is a cofactor required by Methylmalonyl-CoA Mutase."
+ },
+ {
+  "id": "organ:Cardiovascular",
+  "text": "Symptoms affecting the Cardiovascular System are cardiomyopathy, early coronary artery disease and thromboembolism. Diseases with symptoms affecting the Cardiovascular System: Familial Hypercholesterolemia, Homocystinuria, Malonic Aciduria, Pompe Disease, Primary Carnitine Deficiency and Very Long-Chain Acyl-CoA Dehydrogenase Deficiency."
+ },
+ {
+  "id": "organ:Dermatologic",
+  "text": "Symptoms affecting the Dermatologic System are alopecia, angiokeratoma, hair abnormalities, pellagra-like rash, skin rash, telangiectasia, trichorrhexis nodosa and xanthomas. Diseases with symptoms affecting the Dermatologic System: Argininosuccinic Aciduria, Ataxia-Telangiectasia, Biotinidase Deficiency, Fabry Disease, Familial Hypercholesterolemia, Fucosidosis, Hartnup Disease, Holocarboxylase Synthetase Deficiency and Menkes Disease."
+ },
+ {
+  "id": "organ:Endocrine",
+  "text": "Symptoms affecting the Endocrine System are adrenal insufficiency and diabetes mellitus. Diseases with symptoms affecting the Endocrine System: Hereditary Hemochromatosis and X-Linked Adrenoleukodystrophy."
+ },
+ {
+  "id": "organ:GastrointestinalSystem",
+  "text": "Symptoms affecting the Gastrointestinal System are pancreatic insufficiency and vomiting. Diseases with symptoms affecting the Gastrointestinal System: Cystic Fibrosis, Isovaleric Acidemia and Ornithine Transcarbamylase Deficiency."
+ },
+ {
+  "id": "organ:Hepatic",
+  "text": "Symptoms affecting the Hepatic System are hepatolenticular degeneration, hepatomegaly, hepatosplenomegaly, liver cirrhosis and liver failure. Diseases with symptoms affecting the Hepatic System: Gaucher Disease, Glycogen Storage Disease Type I (Von Gierke Disease), Glycogen Storage Disease Type III (Cori Disease), Hereditary Hemochromatosis, Mucopolysaccharidosis Type I (Hurler Syndrome), Niemann-Pick Disease Type A, Tyrosinemia Type I and Wilson Disease."
+ },
+ {
+  "id": "organ:Metabolic",
+  "text": "Symptoms affecting the Metabolic System are failure to thrive, hyperammonemia, hypoglycemia, hypoketotic hypoglycemia, episodic ketoacidosis, metabolic acidosis, sweaty feet odor and sweet-smelling urine. Diseases with symptoms affecting the Metabolic System: Argininosuccinic Aciduria, Beta-Ketothiolase Deficiency, Carbamoyl Phosphate Synthetase I Deficiency, Citrullinemia Type I, Glycogen Storage Disease Type I (Von Gierke Disease), Glycogen Storage Disease Type III (Cori Disease), Isovaleric Acidemia, Maple Syrup Urine Disease, Medium-Chain Acyl-CoA Dehydrogenase Deficiency, Methylmalonic Acidemia, N-Acetylglutamate Synthase Deficiency, Ornithine Transcarbamylase Deficiency, Propionic Acidemia and Very Long-Chain Acyl-CoA Dehydrogenase Deficiency."
+ },
+ {
+  "id": "organ:Muscular",
+  "text": "Symptoms affecting the Muscular System are exercise intolerance, hypotonia, mild hypotonia, muscle weakness, myalgia, exercise-induced myalgia and rhabdomyolysis. Diseases with symptoms affecting the Muscular System: 3-Methylcrotonyl-CoA Carboxylase Deficiency, Carnitine Palmitoyltransferase II Deficiency, Glycogen Storage Disease Type V (McArdle Disease), Pompe Disease, Primary Carnitine Deficiency and Zellweger Syndrome."
+ },
+ {
+  "id": "organ:NervousSystem",
+  "text": "Symptoms affecting the Nervous System are cerebellar ataxia, coma, demyelination, developmental delay, dystonic movement disorder, encephalopathy, gait disturbance, intellectual disability, irritability, lethargy, macrocephaly, microcephaly, progressive neurodegeneration, neuropathic pain, peripheral neuropathy, progressive intellectual disability, seizures, self-injurious behavior and spasticity. Diseases with symptoms affecting the Nervous System: Arginase Deficiency, Ataxia-Telangiectasia, Biotinidase Deficiency, Carbamoyl Phosphate Synthetase I Deficiency, Citrullinemia Type I, Fabry Disease, Glutaric Acidemia Type I, Hartnup Disease, Holocarboxylase Synthetase Deficiency, Krabbe Disease, Lesch-Nyhan Syndrome, Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency, Malonic Aciduria, Maple Syrup Urine Disease, Medium-Chain Acyl-CoA Dehydrogenase Deficiency, Menkes Disease, Metachromatic Leukodystrophy, Niemann-Pick Disease Type A, Nonketotic Hyperglycinemia, Phenylketonuria, Propionic Acidemia, Refsum Disease, Tay-Sachs Disease and X-Linked Adrenoleukodystrophy."
+ },
+ {
+  "id": "organ:Ocular",
+  "text": "Symptoms affecting the Ocular System are cherry-red spot, kayser-fleischer rings, lens dislocation, retinitis pigmentosa and retinopathy. Diseases with symptoms affecting the Ocular System: Homocystinuria, Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency, Refsum Disease, Tay-Sachs Disease and Wilson Disease."
+ },
+ {
+  "id": "organ:Renal",
+  "text": "Symptoms affecting the Renal System are renal failure and renal tubular dysfunction. Diseases with symptoms affecting the Renal System: Fabry Disease and Tyrosinemia Type I."
+ },
+ {
+  "id": "organ:Respiratory",
+  "text": "Symptoms affecting the Respiratory System are chronic lung infection. Diseases with symptoms affecting the Respiratory System: Cystic Fibrosis."
+ },
+ {
+  "id": "organ:Skeletal",
+  "text": "Symptoms affecting the Skeletal System are arthritis, bone crises, coarse facial features, craniofacial abnormalities, gout, joint stiffness, marfanoid habitus and ochronosis. Diseases with symptoms affecting the Skeletal System: Alkaptonuria, Fucosidosis, Gaucher Disease, Homocystinuria, Lesch-Nyhan Syndrome, Mucopolysaccharidosis Type I (Hurler Syndrome), Mucopolysaccharidosis Type II (Hunter Syndrome) and Zellweger Syndrome."
+ },
+ {
+  "id": "inheritance:AutosomalDominant",
+  "text": "Diseases with autosomal dominant inheritance: Familial Hypercholesterolemia."
+ },
+ {
+  "id": "inheritance:AutosomalRecessive",
+  "text": "Diseases with autosomal recessive inheritance: Alkaptonuria, Arginase Deficiency, Argininosuccinic Aciduria, Ataxia-Telangiectasia, Beta-Ketothiolase Deficiency, Biotinidase Deficiency, Carnitine Palmitoyltransferase II Deficiency, Carbamoyl Phosphate Synthetase I Deficiency, Citrullinemia Type I, Cystic Fibrosis, Fucosidosis, Gaucher Disease, Glutaric Acidemia Type I, Glycogen Storage Disease Type III (Cori Disease), Glycogen Storage Disease Type I (Von Gierke Disease), Glycogen Storage Disease Type V (McArdle Disease), Hartnup Disease, Hereditary Hemochromatosis, Holocarboxylase Synthetase Deficiency, Homocystinuria, Isovaleric Acidemia, Krabbe Disease, Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency, Medium-Chain Acyl-CoA Dehydrogenase Deficiency, Malonic Aciduria, Maple Syrup Urine Disease, Metachromatic Leukodystrophy, Methylmalonic Acidemia, Mucopolysaccharidosis Type I (Hurler Syndrome), N-Acetylglutamate Synthase Deficiency, Niemann-Pick Disease Type A, Nonketotic Hyperglycinemia, Phenylketonuria, Pompe Disease, Primary Carnitine Deficiency, Propionic Acidemia, Refsum Disease, Tay-Sachs Disease, 3-Methylcrotonyl-CoA Carboxylase Deficiency, Tyrosinemia Type I, Very Long-Chain Acyl-CoA Dehydrogenase Deficiency, Wilson Disease and Zellweger Syndrome."
+ },
+ {
+  "id": "inheritance:XLinked",
+  "text": "Diseases with x-linked inheritance: Fabry Disease, Lesch-Nyhan Syndrome, Menkes Disease, Mucopolysaccharidosis Type II (Hunter Syndrome), Ornithine Transcarbamylase Deficiency and X-Linked Adrenoleukodystrophy."
+ },
+ {
+  "id": "class:AminoAcidMetabolismDisorder",
+  "text": "Amino Acid Metabolism Disorders in the knowledge base: Alkaptonuria, Arginase Deficiency, Argininosuccinic Aciduria, Citrullinemia Type I, Hartnup Disease, Homocystinuria, Maple Syrup Urine Disease, Nonketotic Hyperglycinemia, Phenylketonuria and Tyrosinemia Type I."
+ },
+ {
+  "id": "class:OrganicAcidemia",
+  "text": "Organic Acidemias in the knowledge base: Beta-Ketothiolase Deficiency, Glutaric Acidemia Type I, Isovaleric Acidemia, Malonic Aciduria, Methylmalonic Acidemia, Propionic Acidemia and 3-Methylcrotonyl-CoA Carboxylase Deficiency."
+ },
+ {
+  "id": "class:UreaCycleDisorder",
+  "text": "Urea Cycle Disorders in the knowledge base: Carbamoyl Phosphate Synthetase I Deficiency, N-Acetylglutamate Synthase Deficiency and Ornithine Transcarbamylase Deficiency."
+ },
+ {
+  "id": "class:FattyAcidOxidationDisorder",
+  "text": "Fatty Acid Oxidation Disorders in the knowledge base: Carnitine Palmitoyltransferase II Deficiency, Long-Chain 3-Hydroxyacyl-CoA Dehydrogenase Deficiency, Medium-Chain Acyl-CoA Dehydrogenase Deficiency, Primary Carnitine Deficiency and Very Long-Chain Acyl-CoA Dehydrogenase Deficiency."
+ },
+ {
+  "id": "class:LysosomalStorageDisorder",
+  "text": "Lysosomal Storage Disorders in the knowledge base: Fabry Disease, Fucosidosis, Gaucher Disease, Krabbe Disease, Metachromatic Leukodystrophy, Mucopolysaccharidosis Type I (Hurler Syndrome), Mucopolysaccharidosis Type II (Hunter Syndrome), Niemann-Pick Disease Type A, Pompe Disease and Tay-Sachs Disease."
+ },
+ {
+  "id": "class:GlycogenStorageDisease",
+  "text": "Glycogen Storage Diseases in the knowledge base: Glycogen Storage Disease Type III (Cori Disease), Glycogen Storage Disease Type I (Von Gierke Disease) and Glycogen Storage Disease Type V (McArdle Disease)."
+ },
+ {
+  "id": "class:PeroxisomalDisorder",
+  "text": "Peroxisomal Disorders in the knowledge base: Refsum Disease, X-Linked Adrenoleukodystrophy and Zellweger Syndrome."
+ },
+ {
+  "id": "class:OtherMonogenicDisorder",
+  "text": "Other Monogenic Disorders in the knowledge base: Ataxia-Telangiectasia, Biotinidase Deficiency, Cystic Fibrosis, Familial Hypercholesterolemia, Hereditary Hemochromatosis, Holocarboxylase Synthetase Deficiency, Lesch-Nyhan Syndrome, Menkes Disease and Wilson Disease."
+ },
+ {
+  "id": "class:CofactorResponsiveDisorder",
+  "text": "Cofactor-Responsive Disorders in the knowledge base: Biotinidase Deficiency, Holocarboxylase Synthetase Deficiency, Methylmalonic Acidemia and Propionic Acidemia. A cofactor-responsive disorder is a disease whose deficient enzyme requires a cofactor."
+ }
+]
